@@ -1,0 +1,311 @@
+./RunMe.sh
+
+2023/04/04 16:29:56
+
+maedaMac-Pro.local
+
+
+     active environment : indra
+    active env location : /Users/maeda/anaconda3/envs/indra
+            shell level : 2
+       user config file : /Users/maeda/.condarc
+ populated config files : 
+          conda version : 23.1.0
+    conda-build version : 3.22.0
+         python version : 3.9.13.final.0
+       virtual packages : __archspec=1=x86_64
+                          __osx=10.16=0
+                          __unix=0=0
+       base environment : /Users/maeda/anaconda3  (writable)
+      conda av data dir : /Users/maeda/anaconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/osx-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/osx-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /Users/maeda/anaconda3/pkgs
+                          /Users/maeda/.conda/pkgs
+       envs directories : /Users/maeda/anaconda3/envs
+                          /Users/maeda/.conda/envs
+               platform : osx-64
+             user-agent : conda/23.1.0 requests/2.28.1 CPython/3.9.13 Darwin/21.6.0 OSX/10.16
+                UID:GID : 501:20
+             netrc file : None
+           offline mode : False
+
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+appnope=0.1.3=pypi_0
+asttokens=2.2.1=pypi_0
+backcall=0.2.0=pypi_0
+bionetgen=2.5.1=1
+boto3=1.26.105=pypi_0
+botocore=1.29.105=pypi_0
+ca-certificates=2023.01.10=hecd8cb5_0
+certifi=2022.12.7=py38hecd8cb5_0
+charset-normalizer=3.1.0=pypi_0
+click=8.1.3=pypi_0
+decorator=5.1.1=pypi_0
+enum34=1.1.10=pypi_0
+executing=1.2.0=pypi_0
+future=0.18.3=pypi_0
+idna=3.4=pypi_0
+ijson=3.2.0.post0=pypi_0
+indra=1.22.0=pypi_0
+ipython=8.12.0=pypi_0
+jedi=0.18.2=pypi_0
+jinja2=3.1.2=pypi_0
+jmespath=1.0.1=pypi_0
+libcxx=14.0.6=h9765a3e_0
+libffi=3.4.2=hecd8cb5_6
+lxml=4.9.2=pypi_0
+markupsafe=2.0.1=pypi_0
+matplotlib-inline=0.1.6=pypi_0
+mpmath=1.3.0=pypi_0
+ncurses=6.4=hcec6c5f_0
+ndex2=2.0.1=pypi_0
+networkx=2.8.8=pypi_0
+nfsim=1.12.1=0
+numpy=1.24.2=pypi_0
+objectpath=0.6.1=pypi_0
+obonet=1.0.0=pypi_0
+openssl=1.1.1t=hca72f7f_0
+pandas=1.5.3=pypi_0
+parso=0.8.3=pypi_0
+pexpect=4.8.0=pypi_0
+pickleshare=0.7.5=pypi_0
+pip=23.0.1=py38hecd8cb5_0
+prompt-toolkit=3.0.38=pypi_0
+protmapper=0.0.27=pypi_0
+ptyprocess=0.7.0=pypi_0
+pure-eval=0.2.2=pypi_0
+pybiopax=0.1.3=pypi_0
+pygments=2.14.0=pypi_0
+pysb=1.14.0=pypi_0
+pysolr=3.9.0=pypi_0
+pystow=0.5.0=pypi_0
+python=3.8.16=h218abb5_3
+python-dateutil=2.8.2=pypi_0
+python-libsbml=5.20.0=pypi_0
+pytz=2023.3=pypi_0
+readline=8.2=hca72f7f_0
+requests=2.28.2=pypi_0
+requests-toolbelt=0.10.1=pypi_0
+s3transfer=0.6.0=pypi_0
+scipy=1.10.1=pypi_0
+setuptools=65.6.3=py38hecd8cb5_0
+six=1.16.0=pypi_0
+sqlite=3.41.1=h6c40b1e_0
+stack-data=0.6.2=pypi_0
+sympy=1.11.1=pypi_0
+tk=8.6.12=h5d9f67b_0
+tqdm=4.65.0=pypi_0
+traitlets=5.9.0=pypi_0
+typing-extensions=4.5.0=pypi_0
+urllib3=1.26.15=pypi_0
+wcwidth=0.2.6=pypi_0
+wheel=0.38.4=py38hecd8cb5_0
+xz=5.2.10=h6c40b1e_1
+zlib=1.2.13=h4dc903c_0
+appnope==0.1.3
+asttokens==2.2.1
+backcall==0.2.0
+boto3==1.26.105
+botocore==1.29.105
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
+charset-normalizer==3.1.0
+click==8.1.3
+decorator==5.1.1
+enum34==1.1.10
+executing==1.2.0
+future==0.18.3
+idna==3.4
+ijson==3.2.0.post0
+indra @ git+https://github.com/sorgerlab/indra.git@db2418790f9376ef976827b9e225886cb10c65f5
+ipython==8.12.0
+jedi==0.18.2
+Jinja2==3.1.2
+jmespath==1.0.1
+lxml==4.9.2
+MarkupSafe==2.0.1
+matplotlib-inline==0.1.6
+mpmath==1.3.0
+ndex2==2.0.1
+networkx==2.8.8
+numpy==1.24.2
+objectpath==0.6.1
+obonet==1.0.0
+pandas==1.5.3
+parso==0.8.3
+pexpect==4.8.0
+pickleshare==0.7.5
+prompt-toolkit==3.0.38
+protmapper==0.0.27
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pybiopax==0.1.3
+Pygments==2.14.0
+pysb==1.14.0
+pysolr==3.9.0
+pystow==0.5.0
+python-dateutil==2.8.2
+python-libsbml==5.20.0
+pytz==2023.3
+requests==2.28.2
+requests-toolbelt==0.10.1
+s3transfer==0.6.0
+scipy==1.10.1
+six==1.16.0
+stack-data==0.6.2
+sympy==1.11.1
+tqdm==4.65.0
+traitlets==5.9.0
+typing_extensions==4.5.0
+urllib3==1.26.15
+wcwidth==0.2.6
+
+python main.py -d example/example.txt -s example/example_SBML_model.xml
+INFO: [2023-04-04 16:30:08] protmapper.resources - Could not access 'hgnc' resource file, will download.
+INFO: [2023-04-04 16:30:08] protmapper.resources - Downloading 'hgnc' resource file into /Users/maeda/.data/protmapper/0.0.27/hgnc_entries.tsv.gz from cache.
+INFO: [2023-04-04 16:30:21] protmapper.resources - Could not access 'up' resource file, will download.
+INFO: [2023-04-04 16:30:21] protmapper.resources - Downloading 'up' resource file into /Users/maeda/.data/protmapper/0.0.27/uniprot_entries.tsv.gz from cache.
+INFO: [2023-04-04 16:30:59] protmapper.resources - Could not access 'upsec' resource file, will download.
+INFO: [2023-04-04 16:30:59] protmapper.resources - Downloading 'upsec' resource file into /Users/maeda/.data/protmapper/0.0.27/uniprot_sec_ac.txt.gz from cache.
+INFO: [2023-04-04 16:31:13] indra.assemblers.pysb.assembler - Using two_step assembly policy.
+INFO: [2023-04-04 16:31:13] indra.ontology.bio.ontology - Initializing INDRA bio ontology for the first time, this may take a few minutes...
+INFO: [2023-04-04 16:31:13] indra.ontology.bio.ontology - Adding nodes...
+INFO: [2023-04-04 16:31:49] indra.ontology.bio.ontology - Adding xrefs...
+INFO: [2023-04-04 16:32:04] indra.ontology.bio.ontology - Adding hierarchy...
+INFO: [2023-04-04 16:32:19] indra.ontology.bio.ontology - Adding replacements...
+INFO: [2023-04-04 16:32:35] indra.ontology.bio.ontology - Building name lookup...
+INFO: [2023-04-04 16:32:38] indra.ontology.bio.ontology - Finished initializing bio ontology...
+INFO: [2023-04-04 16:32:38] indra.ontology.bio.ontology - Caching INDRA bio ontology at /Users/maeda/.indra/bio_ontology/1.28/bio_ontology.pkl
+MAP2K1 phosphorylates MAPK1 and DUSP6 dephosphorylates MAPK1.
+
+Phosphorylation(MAP2K1(), MAPK1()) with evidence "MAP2K1 phosphorylates MAPK1 and DUSP6 dephosphorylates MAPK1."
+Dephosphorylation(DUSP6(), MAPK1()) with evidence "MAP2K1 phosphorylates MAPK1 and DUSP6 dephosphorylates MAPK1."
+Monomer('MAP2K1', ['mapk'])
+Monomer('MAPK1', ['phospho', 'map2k', 'dusp'], {'phospho': ['u', 'p']})
+Monomer('DUSP6', ['mapk'])
+Rule('MAP2K1_phosphorylation_bind_MAPK1_phospho', MAP2K1(mapk=None) + MAPK1(phospho='u', map2k=None) >> MAP2K1(mapk=1) % MAPK1(phospho='u', map2k=1), kf_mm_bind_1)
+Rule('MAP2K1_phosphorylation_MAPK1_phospho', MAP2K1(mapk=1) % MAPK1(phospho='u', map2k=1) >> MAP2K1(mapk=None) + MAPK1(phospho='p', map2k=None), kc_mm_phosphorylation_1)
+Rule('MAP2K1_dissoc_MAPK1', MAP2K1(mapk=1) % MAPK1(map2k=1) >> MAP2K1(mapk=None) + MAPK1(map2k=None), kr_mm_bind_1)
+Rule('DUSP6_dephosphorylation_bind_MAPK1_phospho', DUSP6(mapk=None) + MAPK1(phospho='p', dusp=None) >> DUSP6(mapk=1) % MAPK1(phospho='p', dusp=1), kf_dm_bind_1)
+Rule('DUSP6_dephosphorylation_MAPK1_phospho', DUSP6(mapk=1) % MAPK1(phospho='p', dusp=1) >> DUSP6(mapk=None) + MAPK1(phospho='u', dusp=None), kc_dm_phosphorylation_1)
+Rule('DUSP6_dissoc_MAPK1', DUSP6(mapk=1) % MAPK1(dusp=1) >> DUSP6(mapk=None) + MAPK1(dusp=None), kr_dm_bind_1)
+Parameter('kf_mm_bind_1', 1e-06)
+Parameter('kr_mm_bind_1', 0.1)
+Parameter('kc_mm_phosphorylation_1', 100.0)
+Parameter('kf_dm_bind_1', 1e-06)
+Parameter('kr_dm_bind_1', 0.1)
+Parameter('kc_dm_phosphorylation_1', 100.0)
+Parameter('MAP2K1_0', 10000.0)
+Parameter('MAPK1_0', 10000.0)
+Parameter('DUSP6_0', 10000.0)
+Annotation(MAP2K1, 'https://identifiers.org/hgnc:6840', 'is')
+Annotation(MAP2K1, 'https://identifiers.org/uniprot:Q02750', 'is')
+Annotation(MAP2K1, 'https://identifiers.org/ncit:C17808', 'is')
+Annotation(MAPK1, 'https://identifiers.org/hgnc:6871', 'is')
+Annotation(MAPK1, 'https://identifiers.org/uniprot:P28482', 'is')
+Annotation(MAPK1, 'https://identifiers.org/ncit:C17589', 'is')
+Annotation(DUSP6, 'https://identifiers.org/hgnc:3072', 'is')
+Annotation(DUSP6, 'https://identifiers.org/uniprot:Q16828', 'is')
+Annotation(DUSP6, 'https://identifiers.org/ncit:C106024', 'is')
+Annotation(MAP2K1_phosphorylation_bind_MAPK1_phospho, '20756026-106d-4c9f-9b91-6386a249dba4', 'from_indra_statement')
+Annotation(MAP2K1_phosphorylation_MAPK1_phospho, 'MAP2K1', 'rule_has_subject')
+Annotation(MAP2K1_phosphorylation_MAPK1_phospho, 'MAPK1', 'rule_has_object')
+Annotation(MAP2K1_phosphorylation_MAPK1_phospho, '20756026-106d-4c9f-9b91-6386a249dba4', 'from_indra_statement')
+Annotation(MAP2K1_dissoc_MAPK1, '20756026-106d-4c9f-9b91-6386a249dba4', 'from_indra_statement')
+Annotation(DUSP6_dephosphorylation_bind_MAPK1_phospho, 'ed41a006-ea97-4d8e-aec8-17490fed0d2b', 'from_indra_statement')
+Annotation(DUSP6_dephosphorylation_MAPK1_phospho, 'DUSP6', 'rule_has_subject')
+Annotation(DUSP6_dephosphorylation_MAPK1_phospho, 'MAPK1', 'rule_has_object')
+Annotation(DUSP6_dephosphorylation_MAPK1_phospho, 'ed41a006-ea97-4d8e-aec8-17490fed0d2b', 'from_indra_statement')
+Annotation(DUSP6_dissoc_MAPK1, 'ed41a006-ea97-4d8e-aec8-17490fed0d2b', 'from_indra_statement')
+Process time: 156.737
+
+python main.py -d ../input/decay/decay.txt -s Results/decay/decay_SBML_model.xml
+INFO: [2023-04-04 16:33:25] indra.assemblers.pysb.assembler - Using two_step assembly policy.
+Protein P decays. The initial concentration is 1 uM.
+
+DecreaseAmount(None, P()) with evidence "Protein P decays."
+Monomer('P')
+Rule('P_degraded', P() >> None, kf_p_deg_1)
+Parameter('kf_p_deg_1', 2e-05)
+Parameter('P_0', 10000.0)
+Annotation(P, 'https://identifiers.org/uniprot:P03155', 'is')
+Annotation(P_degraded, '74833e79-7826-4996-86e0-63cdc022c235', 'from_indra_statement')
+Annotation(P_degraded, 'P', 'rule_has_object')
+Process time: 16.148
+
+python main.py -d ../input/hiv/hiv.txt -s Results/hiv/hiv_SBML_model.xml
+INFO: [2023-04-04 16:34:16] indra.assemblers.pysb.assembler - Using two_step assembly policy.
+Molecules of M bind to form E, and E dissociates back into two Ms. Additionally, E and S can bind to form ES, which then dissociates back into E and S, while E and P can bind to form EP, which dissociates back into E and P. Furthermore, ES can be converted into E and P. E and I can also bind to form EI, which dissociates back into E and I. Finally, EI is converted into EJ.
+
+IncreaseAmount(None, EPO()) with evidence "Molecules of M bind to form E, and E dissociates back into two Ms. Additionally, E and S can bind to form ES, which then dissociates back into E and S, while E and P can bind to form EP, which dissociates back into E and P. Furthermore, ES can be converted into E and P. E and I can also bind to form EI, which dissociates back into E and I. Finally, EI is converted into EJ."
+Monomer('EPO')
+Rule('EPO_synthesized', None >> EPO(), kf_e_synth_1)
+Parameter('kf_e_synth_1', 2.0)
+Parameter('EPO_0', 10000.0)
+Annotation(EPO, 'https://identifiers.org/ncit:C49784', 'is')
+Annotation(EPO, 'https://identifiers.org/hgnc:3415', 'is')
+Annotation(EPO, 'https://identifiers.org/uniprot:P01588', 'is')
+Annotation(EPO_synthesized, '9fca8f4c-76d2-4490-8684-40d7a872f560', 'from_indra_statement')
+Annotation(EPO_synthesized, 'EPO', 'rule_has_object')
+Process time: 41.199
+
+python main.py -d ../input/three-step/three-step.txt -s Results/three-step/three-step_SBML_model.xml
+INFO: [2023-04-04 16:34:43] indra.assemblers.pysb.assembler - Using two_step assembly policy.
+Substrate S is converted into product P through intermediates M1 and M2. The metabolic reactions are catalyzed by three enzymes, E1, E2, and E3. The expression of mRNAs G1, G2, and G3 is repressed by the metabolites M1, M2, and P, respectively. The proteins E1, E2, and E3 are translated from G1, G2, and G3, respectively. E1, E2, E3, G1, G2, and G3 degrade. The initial concentration of S is 1.
+
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    pa.export_model('sbml',sbml_model_filename)
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/indra/assemblers/pysb/assembler.py", line 833, in export_model
+    exp_str = pysb.export.export(self.model, format)
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/export/__init__.py", line 185, in export
+    return e.export()
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/export/sbml.py", line 315, in export
+    return libsbml.writeSBMLToString(self.convert(level=level))
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/export/sbml.py", line 125, in convert
+    pysb.bng.generate_equations(self.model)
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 719, in generate_equations
+    lines = iter(generate_network(model, cleanup=cleanup,
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 656, in generate_network
+    with BngFileInterface(model, verbose=verbose, cleanup=cleanup) as bngfile:
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 382, in __init__
+    super(BngFileInterface, self).__init__(
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 60, in __init__
+    self._check_model()
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 87, in _check_model
+    raise NoRulesError()
+pysb.bng.NoRulesError: Model has no rules
+
+python main.py -d ../input/heat_shock_response/heat_shock_response-1.txt ../input/heat_shock_response/heat_shock_response-2.txt -s Results/heat_shock_response/heat_shock_response_SBML_model.xml
+INFO: [2023-04-04 16:36:11] indra.assemblers.pysb.assembler - Using two_step assembly policy.
+s70 and RNA polymerase (RNAP) bind together to form s70_RNAP, which then dissociates into s70 and RNAP. Pg and s70_RNAP bind to create Pg_s70_RNAP, which can dissociate back into its components. RNAP and s32 bind to create RNAP_s32, which can dissociate into RNAP and s32. Ph and RNAP_s32 bind to form Ph_RNAP_s32, which then dissociates back into Ph and RNAP_s32. Additionally, s32 and DnaK form s32_DnaK, which can dissociate into s32 and DnaK, while s32 and FtsH bind to create s32_FtsH, which can dissociate back into s32 and FtsH. Similarly, Punfold and DnaK bind to form Punfold_DnaK, which can dissociate into Punfold and DnaK. D and s70_RNAP bind to form D_s70_RNAP, which can dissociate into D and s70_RNAP, and D and RNAP_s32 bind to form D_RNAP_s32, which can dissociate into D and RNAP_s32. RNAP and D bind to form RNAP_D, and RNAP_D can dissociate into RNAP and D. s32_DnaK and FtsH bind to form s32_DnaK_FtsH, which then dissociates into s32_DnaK and FtsH. s32_FtsH is converted into FtsH, while s32_DnaK_FtsH is converted into DnaK and FtsH. Similarly, Pfold is converted into Punfold, while Punfold_DnaK is converted into Pfold and DnaK. 
+mRNA_s32 is upregurated by Pg_s70_RNAP. Similarly, mRNA_DnaK and mRNA_FtsH are positively regulated by Ph_RNAP_s32. mRNA_Protein is transcribed without regulation. s32, FtsH, DnaK, and Pfold are translated from mRNA_s32, mRNA_FtsH, mRNA_DnaK, and mRNA_Protein, respectively. All the mRNAs (mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein) decay. s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay. RNAP_s32 is degraded into RNAP. Similarly, Ph_RNAP_s32 is degraded into Ph and RNAP. D_RNAP_s32 is degraded into RNAP_D.
+
+Traceback (most recent call last):
+  File "main.py", line 53, in <module>
+    pa.export_model('sbml',sbml_model_filename)
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/indra/assemblers/pysb/assembler.py", line 833, in export_model
+    exp_str = pysb.export.export(self.model, format)
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/export/__init__.py", line 185, in export
+    return e.export()
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/export/sbml.py", line 315, in export
+    return libsbml.writeSBMLToString(self.convert(level=level))
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/export/sbml.py", line 125, in convert
+    pysb.bng.generate_equations(self.model)
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 719, in generate_equations
+    lines = iter(generate_network(model, cleanup=cleanup,
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 656, in generate_network
+    with BngFileInterface(model, verbose=verbose, cleanup=cleanup) as bngfile:
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 382, in __init__
+    super(BngFileInterface, self).__init__(
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 60, in __init__
+    self._check_model()
+  File "/Users/maeda/anaconda3/envs/indra/lib/python3.8/site-packages/pysb/bng.py", line 87, in _check_model
+    raise NoRulesError()
+pysb.bng.NoRulesError: Model has no rules
+

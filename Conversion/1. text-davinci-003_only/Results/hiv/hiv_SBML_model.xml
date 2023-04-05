@@ -1,0 +1,69 @@
+
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfReactants>
+      <species id="M" name="Molecules of M" compartment="default" initialAmount="0"/>
+      <species id="E" name="E" compartment="default" initialAmount="0"/>
+      <species id="S" name="S" compartment="default" initialAmount="0"/>
+      <species id="P" name="P" compartment="default" initialAmount="0"/>
+      <species id="ES" name="ES" compartment="default" initialAmount="0"/>
+      <species id="EP" name="EP" compartment="default" initialAmount="0"/>
+      <species id="EI" name="EI" compartment="default" initialAmount="0"/>
+      <species id="EJ" name="EJ" compartment="default" initialAmount="0"/>
+    </listOfReactants>
+    <listOfReactions>
+      <reaction id="M_bind_to_form_E" reversible="true">
+        <listOfReactants>
+          <speciesReference species="M" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="E_and_S_bind_to_form_ES" reversible="true">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="S" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ES" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="E_and_P_bind_to_form_EP" reversible="true">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EP" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="ES_converted_into_E_and_P" reversible="false">
+        <listOfReactants>
+          <speciesReference species="ES" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="E_and_I_bind_to_form_EI" reversible="true">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="I" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EI" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="EI_converted_into_EJ" reversible="false">
+        <listOfReactants>
+          <speciesReference species="EI" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EJ" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

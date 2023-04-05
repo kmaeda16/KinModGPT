@@ -1,0 +1,100 @@
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+s70 and RNA polymerase (RNAP) bind together to form s70_RNAP, which then dissociates into s70 and RNAP. Pg and s70_RNAP bind to create Pg_s70_RNAP, which can dissociate back into its components. RNAP and s32 bind to create RNAP_s32, which can dissociate into RNAP and s32. Ph and RNAP_s32 bind to form Ph_RNAP_s32, which then dissociates back into Ph and RNAP_s32. Additionally, s32 and DnaK form s32_DnaK, which can dissociate into s32 and DnaK, while s32 and FtsH bind to create s32_FtsH, which can dissociate back into s32 and FtsH. Similarly, Punfold and DnaK bind to form Punfold_DnaK, which can dissociate into Punfold and DnaK. D and s70_RNAP bind to form D_s70_RNAP, which can dissociate into D and s70_RNAP, and D and RNAP_s32 bind to form D_RNAP_s32, which can dissociate into D and RNAP_s32. RNAP and D bind to form RNAP_D, and RNAP_D can dissociate into RNAP and D. s32_DnaK and FtsH bind to form s32_DnaK_FtsH, which then dissociates into s32_DnaK and FtsH. s32_FtsH is converted into FtsH, while s32_DnaK_FtsH is converted into DnaK and FtsH. Similarly, Pfold is converted into Punfold, while Punfold_DnaK is converted into Pfold and DnaK. 
+
+- s70 + RNAP -> s70_RNAP ; ka_s70_RNAP * s70 * RNAP ; ka_s70_RNAP = 1
+- s70_RNAP -> s70 + RNAP ; kd_s70_RNAP * s70_RNAP ; kd_s70_RNAP = 1
+- Pg + s70_RNAP -> Pg_s70_RNAP ; ka_Pg_s70_RNAP * Pg * s70_RNAP ; ka_Pg_s70_RNAP = 1
+- Pg_s70_RNAP -> Pg + s70_RNAP ; kd_Pg_s70_RNAP * Pg_s70_RNAP ; kd_Pg_s70_RNAP = 1
+- RNAP + s32 -> RNAP_s32 ; ka_RNAP_s32 * RNAP * s32 ; ka_RNAP_s32 = 1
+- RNAP_s32 -> RNAP + s32 ; kd_RNAP_s32 * RNAP_s32 ; kd_RNAP_s32 = 1
+- Ph + RNAP_s32 -> Ph_RNAP_s32 ; ka_Ph_RNAP_s32 * Ph * RNAP_s32 ; ka_Ph_RNAP_s32 = 1
+- Ph_RNAP_s32 -> Ph + RNAP_s32 ; kd_Ph_RNAP_s32 * Ph_RNAP_s32 ; kd_Ph_RNAP_s32 = 1
+- s32 + DnaK -> s32_DnaK ; ka_s32_DnaK * s32 * DnaK ; ka_s32_DnaK = 1
+- s32_DnaK -> s32 + DnaK ; kd_s32_DnaK * s32_DnaK ; kd_s32_DnaK = 1
+- s32 + FtsH -> s32_FtsH ; ka_s32_FtsH * s32 * FtsH ; ka_s32_FtsH = 1
+- s32_FtsH -> s32 + FtsH ; kd_s32_FtsH * s32_FtsH ; kd_s32_FtsH = 1
+- Punfold + DnaK -> Punfold_DnaK ; ka_Punfold_DnaK * Punfold * DnaK ; ka_Punfold_DnaK = 1
+- Punfold_DnaK -> Punfold + DnaK ; kd_Punfold_DnaK * Punfold_DnaK ; kd_Punfold_DnaK = 1
+- D + s70_RNAP -> D_s70_RNAP ; ka_D_s70_RNAP * D * s70_RNAP ; ka_D_s70_RNAP = 1
+- D_s70_RNAP -> D + s70_RNAP ; kd_D_s70_RNAP * D_s70_RNAP ; kd_D_s70_RNAP = 1
+- D + RNAP_s32 -> D_RNAP_s32 ; ka_D_RNAP_s32 * D * RNAP_s32 ; ka_D_RNAP_s32 = 1
+- D_RNAP_s32 -> D + RNAP_s32 ; kd_D_RNAP_s32 * D_RNAP_s32 ; kd_D_RNAP_s32 = 1
+- RNAP + D -> RNAP_D ; ka_RNAP_D * RNAP * D ; ka_RNAP_D = 1
+- RNAP_D -> RNAP + D ; kd_RNAP_D * RNAP_D ; kd_RNAP_D = 1
+- s32_DnaK + FtsH -> s32_DnaK_FtsH ; ka_s32_DnaK_FtsH * s32_DnaK * FtsH ; ka_s32_DnaK_FtsH = 1
+- s32_DnaK_FtsH -> s32_DnaK + FtsH ; kd_s32_DnaK_FtsH * s32_DnaK_FtsH ; kd_s32_DnaK_FtsH = 1
+- s32_FtsH -> FtsH ; kc_s32_FtsH * s32_FtsH ; kc_s32_FtsH = 1
+- s32_DnaK_FtsH -> DnaK + FtsH ; kc_s32_DnaK_FtsH * s32_DnaK_FtsH ; kc_s32_DnaK_FtsH = 1
+- Pfold -> Punfold ; kc_Pfold_Punfold * Pfold ; kc_Pfold_Punfold = 1
+- Punfold_DnaK -> Pfold + DnaK ; kc_Punfold_DnaK * Punfold_DnaK ; kc_Punfold_DnaK = 1
+####
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+mRNA_s32 is upregurated by Pg_s70_RNAP. Similarly, mRNA_DnaK and mRNA_FtsH are positively regulated by Ph_RNAP_s32. mRNA_Protein is transcribed without regulation. s32, FtsH, DnaK, and Pfold are translated from mRNA_s32, mRNA_FtsH, mRNA_DnaK, and mRNA_Protein, respectively. All the mRNAs (mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein) decay. s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay. RNAP_s32 is degraded into RNAP. Similarly, Ph_RNAP_s32 is degraded into Ph and RNAP. D_RNAP_s32 is degraded into RNAP_D.
+
+- -> mRNA_s32 ; km_mRNA_s32_Pg_s70_RNAP * Pg_s70_RNAP ^ n_mRNA_s32_Pg_s70_RNAP / ( K_mRNA_s32_Pg_s70_RNAP ^ n_mRNA_s32_Pg_s70_RNAP + Pg_s70_RNAP ^ n_mRNA_s32_Pg_s70_RNAP ) ; km_mRNA_s32_Pg_s70_RNAP = 1 ; K_mRNA_s32_Pg_s70_RNAP = 1 ; n_mRNA_s32_Pg_s70_RNAP = 1
+- -> mRNA_DnaK ; km_mRNA_DnaK_Ph_RNAP_s32 * Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph_RNAP_s32 / ( K_mRNA_DnaK_Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph_RNAP_s32 + Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph_RNAP_s32 ) ; km_mRNA_DnaK_Ph_RNAP_s32 = 1 ; K_mRNA_DnaK_Ph_RNAP_s32 = 1 ; n_mRNA_DnaK_Ph_RNAP_s32 = 1
+- -> mRNA_FtsH ; km_mRNA_FtsH_Ph_RNAP_s32 * Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph_RNAP_s32 / ( K_mRNA_FtsH_Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph_RNAP_s32 + Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph_RNAP_s32 ) ; km_mRNA_FtsH_Ph_RNAP_s32 = 1 ; K_mRNA_FtsH_Ph_RNAP_s32 = 1 ; n_mRNA_FtsH_Ph_RNAP_s32 = 1
+- -> mRNA_Protein ; km_mRNA_Protein ; km_mRNA_Protein = 1
+- -> s32 ; kp_mRNA_s32_s32 * mRNA_s32 ; kp_mRNA_s32_s32 = 1
+- -> FtsH ; kp_mRNA_FtsH_FtsH * mRNA_FtsH ; kp_mRNA_FtsH_FtsH = 1
+- -> DnaK ; kp_mRNA_DnaK_DnaK * mRNA_DnaK ; kp_mRNA_DnaK_DnaK = 1
+- -> Pfold ; kp_mRNA_Protein_Pfold * mRNA_Protein ; kp_mRNA_Protein_Pfold = 1
+- mRNA_s32 -> ; kdeg_mRNA_s32 * mRNA_s32 ; kdeg_mRNA_s32 = 1
+- mRNA_DnaK -> ; kdeg_mRNA_DnaK * mRNA_DnaK ; kdeg_mRNA_DnaK = 1
+- mRNA_FtsH -> ; kdeg_mRNA_FtsH * mRNA_FtsH ; kdeg_mRNA_FtsH = 1
+- mRNA_Protein -> ; kdeg_mRNA_Protein * mRNA_Protein ; kdeg_mRNA_Protein = 1
+- s32 -> ; kdeg_s32 * s32 ; kdeg_s32 = 1
+- s32_DnaK -> ; kdeg_s32_DnaK * s32_DnaK ; kdeg_s32_DnaK = 1
+- s32_FtsH -> ; kdeg_s32_FtsH * s32_FtsH ; kdeg_s32_FtsH = 1
+- s32_DnaK_FtsH -> ; kdeg_s32_DnaK_FtsH * s32_DnaK_FtsH ; kdeg_s32_DnaK_FtsH = 1
+- FtsH -> ; kdeg_FtsH * FtsH ; kdeg_FtsH = 1
+- DnaK -> ; kdeg_DnaK * DnaK ; kdeg_DnaK = 1
+- Punfold_DnaK -> ; kdeg_Punfold_DnaK * Punfold_DnaK ; kdeg_Punfold_DnaK = 1
+- Pfold -> ; kdeg_Pfold * Pfold ; kdeg_Pfold = 1
+- Punfold -> ; kdeg_Punfold * Punfold ; kdeg_Punfold = 1
+- RNAP_s32 -> RNAP ; kdeg_RNAP_s32 * RNAP_s32 ; kdeg_RNAP_s32 = 1
+- Ph_RNAP_s32 -> Ph + RNAP ; kdeg_Ph_RNAP_s32 * Ph_RNAP_s32 ; kdeg_Ph_RNAP_s32 = 1
+- D_RNAP_s32 -> RNAP_D ; kdeg_D_RNAP_s32 * D_RNAP_s32 ; kdeg_D_RNAP_s32 = 1
+####

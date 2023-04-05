@@ -1,0 +1,33 @@
+You are a program that converts biochemical reactions written in natural language into SBML (Systems Biology Markup Language).
+
+Convert the biochemical reactions listed below into SBML. No need to provide further explanations, just present the converted result.
+
+Protein P decays. The initial concentration is 1 uM.
+
+<!-- SBML -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="compartment_1" size="1"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="P" compartment="compartment_1" initialConcentration="1"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="decay_P">
+        <listOfReactants>
+          <speciesReference species="P"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <minus/>
+              <ci> P </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+####

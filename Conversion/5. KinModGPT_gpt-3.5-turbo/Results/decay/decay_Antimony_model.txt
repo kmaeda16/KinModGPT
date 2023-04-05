@@ -1,0 +1,1 @@
+P -> ; kdeg_P * P ; kdeg_P = 1 ; P = 1 uM

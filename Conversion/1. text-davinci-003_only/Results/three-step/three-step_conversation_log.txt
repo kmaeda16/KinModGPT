@@ -1,0 +1,136 @@
+You are a program that converts biochemical reactions written in natural language into SBML (Systems Biology Markup Language).
+
+Convert the biochemical reactions listed below into SBML. No need to provide further explanations, just present the converted result.
+
+Substrate S is converted into product P through intermediates M1 and M2. The metabolic reactions are catalyzed by three enzymes, E1, E2, and E3. The expression of mRNAs G1, G2, and G3 is repressed by the metabolites M1, M2, and P, respectively. The proteins E1, E2, and E3 are translated from G1, G2, and G3, respectively. E1, E2, E3, G1, G2, and G3 degrade. The initial concentration of S is 1.
+
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model>
+    <listOfCompartments>
+      <compartment id="default" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S" compartment="default" initialConcentration="1"/>
+      <species id="M1" compartment="default" initialConcentration="0"/>
+      <species id="M2" compartment="default" initialConcentration="0"/>
+      <species id="P" compartment="default" initialConcentration="0"/>
+      <species id="E1" compartment="default" initialConcentration="0"/>
+      <species id="E2" compartment="default" initialConcentration="0"/>
+      <species id="E3" compartment="default" initialConcentration="0"/>
+      <species id="G1" compartment="default" initialConcentration="0"/>
+      <species id="G2" compartment="default" initialConcentration="0"/>
+      <species id="G3" compartment="default" initialConcentration="0"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R1" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E1"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R2" reversible="false">
+        <listOfReactants>
+          <speciesReference species="M1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M2"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E2"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R3" reversible="false">
+        <listOfReactants>
+          <speciesReference species="M2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="E3"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R4" reversible="false">
+        <listOfReactants>
+          <speciesReference species="G1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R5" reversible="false">
+        <listOfReactants>
+          <speciesReference species="G2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R6" reversible="false">
+        <listOfReactants>
+          <speciesReference species="G3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E3"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R7" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E1"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R8" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E2"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R9" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E3"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R10" reversible="false">
+        <listOfReactants>
+          <speciesReference species="G1"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="M1"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R11" reversible="false">
+        <listOfReactants>
+          <speciesReference species="G2"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="M2"/>
+        </listOfModifiers>
+      </reaction>
+      <reaction id="R12" reversible="false">
+        <listOfReactants>
+          <speciesReference species="G3"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P"/>
+        </listOfModifiers>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+####

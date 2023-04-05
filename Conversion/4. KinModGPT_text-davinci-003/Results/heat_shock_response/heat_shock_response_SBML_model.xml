@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.13.2 with libSBML version 5.19.5. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="__main" id="__main">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="s70" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="RNAP" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="s70_RNAP" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pg" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pg_s70_RNAP" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="s32" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="RNAP_s32" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Ph" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Ph_RNAP_s32" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DnaK" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="s32_DnaK" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="FtsH" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="s32_FtsH" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Punfold" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Punfold_DnaK" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="D" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="D_s70_RNAP" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="D_RNAP_s32" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="RNAP_D" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="s32_DnaK_FtsH" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="Pfold" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_s32" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_DnaK" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_FtsH" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_Protein" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="ka_s70_RNAP" value="1" constant="true"/>
+      <parameter id="kd_s70_RNAP" value="1" constant="true"/>
+      <parameter id="ka_Pg_s70_RNAP" value="1" constant="true"/>
+      <parameter id="kd_Pg_s70_RNAP" value="1" constant="true"/>
+      <parameter id="ka_RNAP_s32" value="1" constant="true"/>
+      <parameter id="kd_RNAP_s32" value="1" constant="true"/>
+      <parameter id="ka_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="kd_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="ka_s32_DnaK" value="1" constant="true"/>
+      <parameter id="kd_s32_DnaK" value="1" constant="true"/>
+      <parameter id="ka_s32_FtsH" value="1" constant="true"/>
+      <parameter id="kd_s32_FtsH" value="1" constant="true"/>
+      <parameter id="ka_Punfold_DnaK" value="1" constant="true"/>
+      <parameter id="kd_Punfold_DnaK" value="1" constant="true"/>
+      <parameter id="ka_D_s70_RNAP" value="1" constant="true"/>
+      <parameter id="kd_D_s70_RNAP" value="1" constant="true"/>
+      <parameter id="ka_D_RNAP_s32" value="1" constant="true"/>
+      <parameter id="kd_D_RNAP_s32" value="1" constant="true"/>
+      <parameter id="ka_RNAP_D" value="1" constant="true"/>
+      <parameter id="kd_RNAP_D" value="1" constant="true"/>
+      <parameter id="ka_s32_DnaK_FtsH" value="1" constant="true"/>
+      <parameter id="kd_s32_DnaK_FtsH" value="1" constant="true"/>
+      <parameter id="kc_s32_FtsH" value="1" constant="true"/>
+      <parameter id="kc_s32_DnaK_FtsH" value="1" constant="true"/>
+      <parameter id="kc_Pfold_Punfold" value="1" constant="true"/>
+      <parameter id="kc_Punfold_DnaK" value="1" constant="true"/>
+      <parameter id="km_mRNA_s32_Pg_s70_RNAP" value="1" constant="true"/>
+      <parameter id="n_mRNA_s32_Pg_s70_RNAP" value="1" constant="true"/>
+      <parameter id="K_mRNA_s32_Pg_s70_RNAP" value="1" constant="true"/>
+      <parameter id="km_mRNA_DnaK_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="n_mRNA_DnaK_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="K_mRNA_DnaK_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="km_mRNA_FtsH_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="n_mRNA_FtsH_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="K_mRNA_FtsH_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="km_mRNA_Protein" value="1" constant="true"/>
+      <parameter id="kp_mRNA_s32_s32" value="1" constant="true"/>
+      <parameter id="kp_mRNA_FtsH_FtsH" value="1" constant="true"/>
+      <parameter id="kp_mRNA_DnaK_DnaK" value="1" constant="true"/>
+      <parameter id="kp_mRNA_Protein_Pfold" value="1" constant="true"/>
+      <parameter id="kdeg_mRNA_s32" value="1" constant="true"/>
+      <parameter id="kdeg_mRNA_DnaK" value="1" constant="true"/>
+      <parameter id="kdeg_mRNA_FtsH" value="1" constant="true"/>
+      <parameter id="kdeg_mRNA_Protein" value="1" constant="true"/>
+      <parameter id="kdeg_s32" value="1" constant="true"/>
+      <parameter id="kdeg_s32_DnaK" value="1" constant="true"/>
+      <parameter id="kdeg_s32_FtsH" value="1" constant="true"/>
+      <parameter id="kdeg_s32_DnaK_FtsH" value="1" constant="true"/>
+      <parameter id="kdeg_FtsH" value="1" constant="true"/>
+      <parameter id="kdeg_DnaK" value="1" constant="true"/>
+      <parameter id="kdeg_Punfold_DnaK" value="1" constant="true"/>
+      <parameter id="kdeg_Pfold" value="1" constant="true"/>
+      <parameter id="kdeg_Punfold" value="1" constant="true"/>
+      <parameter id="kdeg_RNAP_s32" value="1" constant="true"/>
+      <parameter id="kdeg_Ph_RNAP_s32" value="1" constant="true"/>
+      <parameter id="kdeg_D_RNAP_s32" value="1" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="_J0" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s70" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_s70_RNAP </ci>
+              <ci> s70 </ci>
+              <ci> RNAP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s70" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_s70_RNAP </ci>
+              <ci> s70_RNAP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pg" stoichiometry="1" constant="true"/>
+          <speciesReference species="s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pg_s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_Pg_s70_RNAP </ci>
+              <ci> Pg </ci>
+              <ci> s70_RNAP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J3" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pg_s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pg" stoichiometry="1" constant="true"/>
+          <speciesReference species="s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_Pg_s70_RNAP </ci>
+              <ci> Pg_s70_RNAP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J4" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_RNAP_s32 </ci>
+              <ci> RNAP </ci>
+              <ci> s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J5" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_RNAP_s32 </ci>
+              <ci> RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J6" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ph" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Ph_RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_Ph_RNAP_s32 </ci>
+              <ci> Ph </ci>
+              <ci> RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J7" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ph_RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Ph" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_Ph_RNAP_s32 </ci>
+              <ci> Ph_RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J8" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_s32_DnaK </ci>
+              <ci> s32 </ci>
+              <ci> DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J9" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_s32_DnaK </ci>
+              <ci> s32_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J10" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_s32_FtsH </ci>
+              <ci> s32 </ci>
+              <ci> FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J11" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_s32_FtsH </ci>
+              <ci> s32_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J12" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Punfold" stoichiometry="1" constant="true"/>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Punfold_DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_Punfold_DnaK </ci>
+              <ci> Punfold </ci>
+              <ci> DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J13" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Punfold_DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Punfold" stoichiometry="1" constant="true"/>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_Punfold_DnaK </ci>
+              <ci> Punfold_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J14" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="D" stoichiometry="1" constant="true"/>
+          <speciesReference species="s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D_s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_D_s70_RNAP </ci>
+              <ci> D </ci>
+              <ci> s70_RNAP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J15" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="D_s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D" stoichiometry="1" constant="true"/>
+          <speciesReference species="s70_RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_D_s70_RNAP </ci>
+              <ci> D_s70_RNAP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J16" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="D" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D_RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_D_RNAP_s32 </ci>
+              <ci> D </ci>
+              <ci> RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J17" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="D_RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_D_RNAP_s32 </ci>
+              <ci> D_RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J18" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+          <speciesReference species="D" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_D" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_RNAP_D </ci>
+              <ci> RNAP </ci>
+              <ci> D </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J19" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="RNAP_D" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+          <speciesReference species="D" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_RNAP_D </ci>
+              <ci> RNAP_D </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J20" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK" stoichiometry="1" constant="true"/>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_DnaK_FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_s32_DnaK_FtsH </ci>
+              <ci> s32_DnaK </ci>
+              <ci> FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J21" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_DnaK" stoichiometry="1" constant="true"/>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_s32_DnaK_FtsH </ci>
+              <ci> s32_DnaK_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J22" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_s32_FtsH </ci>
+              <ci> s32_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J23" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_s32_DnaK_FtsH </ci>
+              <ci> s32_DnaK_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J24" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pfold" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Punfold" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_Pfold_Punfold </ci>
+              <ci> Pfold </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J25" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Punfold_DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pfold" stoichiometry="1" constant="true"/>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_Punfold_DnaK </ci>
+              <ci> Punfold_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J26" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA_s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Pg_s70_RNAP"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_mRNA_s32_Pg_s70_RNAP </ci>
+                <apply>
+                  <power/>
+                  <ci> Pg_s70_RNAP </ci>
+                  <ci> n_mRNA_s32_Pg_s70_RNAP </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_mRNA_s32_Pg_s70_RNAP </ci>
+                  <ci> n_mRNA_s32_Pg_s70_RNAP </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Pg_s70_RNAP </ci>
+                  <ci> n_mRNA_s32_Pg_s70_RNAP </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J27" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA_DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Ph_RNAP_s32"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_mRNA_DnaK_Ph_RNAP_s32 </ci>
+                <apply>
+                  <power/>
+                  <ci> Ph_RNAP_s32 </ci>
+                  <ci> n_mRNA_DnaK_Ph_RNAP_s32 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_mRNA_DnaK_Ph_RNAP_s32 </ci>
+                  <ci> n_mRNA_DnaK_Ph_RNAP_s32 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Ph_RNAP_s32 </ci>
+                  <ci> n_mRNA_DnaK_Ph_RNAP_s32 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J28" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA_FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="Ph_RNAP_s32"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_mRNA_FtsH_Ph_RNAP_s32 </ci>
+                <apply>
+                  <power/>
+                  <ci> Ph_RNAP_s32 </ci>
+                  <ci> n_mRNA_FtsH_Ph_RNAP_s32 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_mRNA_FtsH_Ph_RNAP_s32 </ci>
+                  <ci> n_mRNA_FtsH_Ph_RNAP_s32 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> Ph_RNAP_s32 </ci>
+                  <ci> n_mRNA_FtsH_Ph_RNAP_s32 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J29" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="mRNA_Protein" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> km_mRNA_Protein </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J30" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA_s32"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_mRNA_s32_s32 </ci>
+              <ci> mRNA_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J31" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA_FtsH"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_mRNA_FtsH_FtsH </ci>
+              <ci> mRNA_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J32" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA_DnaK"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_mRNA_DnaK_DnaK </ci>
+              <ci> mRNA_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J33" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="Pfold" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="mRNA_Protein"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_mRNA_Protein_Pfold </ci>
+              <ci> mRNA_Protein </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J34" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="mRNA_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_mRNA_s32 </ci>
+              <ci> mRNA_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J35" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="mRNA_DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_mRNA_DnaK </ci>
+              <ci> mRNA_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J36" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="mRNA_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_mRNA_FtsH </ci>
+              <ci> mRNA_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J37" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="mRNA_Protein" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_mRNA_Protein </ci>
+              <ci> mRNA_Protein </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J38" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_s32 </ci>
+              <ci> s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J39" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_s32_DnaK </ci>
+              <ci> s32_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J40" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_s32_FtsH </ci>
+              <ci> s32_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J41" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK_FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_s32_DnaK_FtsH </ci>
+              <ci> s32_DnaK_FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J42" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="FtsH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_FtsH </ci>
+              <ci> FtsH </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J43" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_DnaK </ci>
+              <ci> DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J44" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Punfold_DnaK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_Punfold_DnaK </ci>
+              <ci> Punfold_DnaK </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J45" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pfold" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_Pfold </ci>
+              <ci> Pfold </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J46" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Punfold" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_Punfold </ci>
+              <ci> Punfold </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J47" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_RNAP_s32 </ci>
+              <ci> RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J48" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Ph_RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Ph" stoichiometry="1" constant="true"/>
+          <speciesReference species="RNAP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_Ph_RNAP_s32 </ci>
+              <ci> Ph_RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J49" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="D_RNAP_s32" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_D" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_D_RNAP_s32 </ci>
+              <ci> D_RNAP_s32 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

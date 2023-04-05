@@ -1,0 +1,110 @@
+======= Parameters =======
+ka_s70_RNAP	=	1.000000e+15
+kd_s70_RNAP	=	1.000000e+06
+ka_Pg_s70_RNAP	=	1.000000e+15
+kd_Pg_s70_RNAP	=	1.000000e+06
+ka_RNAP_s32	=	1.000000e+15
+kd_RNAP_s32	=	1.000000e+06
+ka_Ph_RNAP_s32	=	1.000000e+15
+kd_Ph_RNAP_s32	=	1.000000e+06
+ka_s32_DnaK	=	1.000000e+13
+kd_s32_DnaK	=	1.000000e+06
+ka_s32_FtsH	=	1.000000e+14
+kd_s32_FtsH	=	1.000000e+06
+ka_Punfold_DnaK	=	1.000000e+12
+kd_Punfold_DnaK	=	1.000000e+06
+ka_D_s70_RNAP	=	1.000000e+11
+kd_D_s70_RNAP	=	1.000000e+06
+ka_D_RNAP_s32	=	1.000000e+11
+kd_D_RNAP_s32	=	1.000000e+06
+ka_RNAP_D	=	1.000000e+12
+kd_RNAP_D	=	1.000000e+06
+ka_s32_DnaK_FtsH	=	1.000000e+14
+kd_s32_DnaK_FtsH	=	1.000000e+06
+kc_s32_FtsH	=	5.000000e+00
+kc_s32_DnaK_FtsH	=	5.000000e+00
+kc_Pfold_Punfold	=	7.500000e+01
+kc_Punfold_DnaK	=	1.500000e+04
+km_mRNA_s32_Pg_s70_RNAP	=	5.080000e-08
+n_mRNA_s32_Pg_s70_RNAP	=	1.000000e+00
+K_mRNA_s32_Pg_s70_RNAP	=	5.080000e-06
+km_mRNA_DnaK_Ph_RNAP_s32	=	1.270000e-06
+n_mRNA_DnaK_Ph_RNAP_s32	=	1.000000e+00
+K_mRNA_DnaK_Ph_RNAP_s32	=	3.810000e-08
+km_mRNA_FtsH_Ph_RNAP_s32	=	5.080000e-08
+n_mRNA_FtsH_Ph_RNAP_s32	=	1.000000e+00
+K_mRNA_FtsH_Ph_RNAP_s32	=	3.810000e-08
+km_mRNA_Protein	=	3.810000e-06
+kp_mRNA_s32_s32	=	2.000000e+01
+kp_mRNA_FtsH_FtsH	=	2.000000e+01
+kp_mRNA_DnaK_DnaK	=	2.000000e+01
+kp_mRNA_Protein_Pfold	=	2.000000e+01
+kdeg_mRNA_s32	=	5.000000e-01
+kdeg_mRNA_DnaK	=	5.000000e-01
+kdeg_mRNA_FtsH	=	5.000000e-01
+kdeg_mRNA_Protein	=	5.000000e-01
+kdeg_s32	=	3.000000e-02
+kdeg_s32_DnaK	=	3.000000e-02
+kdeg_s32_FtsH	=	3.000000e-02
+kdeg_s32_DnaK_FtsH	=	3.000000e-02
+kdeg_FtsH	=	3.000000e-02
+kdeg_DnaK	=	3.000000e-02
+kdeg_Punfold_DnaK	=	3.000000e-02
+kdeg_Pfold	=	3.000000e-02
+kdeg_Punfold	=	3.000000e-02
+kdeg_RNAP_s32	=	3.000000e-02
+kdeg_Ph_RNAP_s32	=	3.000000e-02
+kdeg_D_RNAP_s32	=	3.000000e-02
+==========================
+0	time
+1	s70
+2	RNAP
+3	s70_RNAP
+4	Pg
+5	Pg_s70_RNAP
+6	s32
+7	RNAP_s32
+8	Ph
+9	Ph_RNAP_s32
+10	DnaK
+11	s32_DnaK
+12	FtsH
+13	s32_FtsH
+14	Punfold
+15	Punfold_DnaK
+16	D
+17	D_s70_RNAP
+18	D_RNAP_s32
+19	RNAP_D
+20	s32_DnaK_FtsH
+21	Pfold
+22	mRNA_s32
+23	mRNA_DnaK
+24	mRNA_FtsH
+25	mRNA_Protein
+0	time
+1	s70
+2	RNAP
+3	s70_RNAP
+4	Pg
+5	Pg_s70_RNAP
+6	s32
+7	RNAP_s32
+8	Ph
+9	Ph_RNAP_s32
+10	DnaK
+11	s32_DnaK
+12	FtsH
+13	s32_FtsH
+14	Punfold
+15	Punfold_DnaK
+16	D
+17	D_s70_RNAP
+18	D_RNAP_s32
+19	RNAP_D
+20	s32_DnaK_FtsH
+21	Pfold
+22	mRNA_s32
+23	mRNA_DnaK
+24	mRNA_FtsH
+25	mRNA_Protein

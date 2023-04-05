@@ -1,0 +1,76 @@
+You are a program that converts biochemical reactions written in natural language into SBML (Systems Biology Markup Language).
+
+Convert the biochemical reactions listed below into SBML. No need to provide further explanations, just present the converted result.
+
+Molecules of M bind to form E, and E dissociates back into two Ms. Additionally, E and S can bind to form ES, which then dissociates back into E and S, while E and P can bind to form EP, which dissociates back into E and P. Furthermore, ES can be converted into E and P. E and I can also bind to form EI, which dissociates back into E and I. Finally, EI is converted into EJ.
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="BiochemicalReactions">
+    <listOfSpecies>
+      <species id="M" name="M" compartment="c" initialConcentration="1"/>
+      <species id="E" name="E" compartment="c" initialConcentration="1"/>
+      <species id="S" name="S" compartment="c" initialConcentration="1"/>
+      <species id="ES" name="ES" compartment="c" initialConcentration="1"/>
+      <species id="P" name="P" compartment="c" initialConcentration="1"/>
+      <species id="EP" name="EP" compartment="c" initialConcentration="1"/>
+      <species id="I" name="I" compartment="c" initialConcentration="1"/>
+      <species id="EI" name="EI" compartment="c" initialConcentration="1"/>
+      <species id="EJ" name="EJ" compartment="c" initialConcentration="1"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R1" reversible="true">
+        <listOfReactants>
+          <speciesReference species="M" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R2" reversible="true">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="S" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ES" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R3" reversible="true">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EP" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R4" reversible="false">
+        <listOfReactants>
+          <speciesReference species="ES" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R5" reversible="true">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1"/>
+          <speciesReference species="I" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EI" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R6" reversible="false">
+        <listOfReactants>
+          <speciesReference species="EI" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EJ" stoichiometry="1"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+####

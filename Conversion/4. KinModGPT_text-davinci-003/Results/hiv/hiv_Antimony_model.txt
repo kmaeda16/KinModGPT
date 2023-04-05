@@ -1,0 +1,10 @@
+M + M -> E ; ka_M_M_E * M * M ; ka_M_M_E = 1
+E -> M + M ; kd_E_M_M * E ; kd_E_M_M = 1
+E + S -> ES ; ka_E_S_ES * E * S ; ka_E_S_ES = 1
+ES -> E + S ; kd_ES_E_S * ES ; kd_ES_E_S = 1
+E + P -> EP ; ka_E_P_EP * E * P ; ka_E_P_EP = 1
+EP -> E + P ; kd_EP_E_P * EP ; kd_EP_E_P = 1
+ES -> E + P ; kc_ES_E_P * ES ; kc_ES_E_P = 1
+E + I -> EI ; ka_E_I_EI * E * I ; ka_E_I_EI = 1
+EI -> E + I ; kd_EI_E_I * EI ; kd_EI_E_I = 1
+EI -> EJ ; kc_EI_EJ * EI ; kc_EI_EJ = 1

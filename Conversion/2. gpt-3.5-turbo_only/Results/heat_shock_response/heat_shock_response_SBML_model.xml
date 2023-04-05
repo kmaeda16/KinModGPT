@@ -1,0 +1,140 @@
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model>
+    <listOfCompartments>
+      <compartment id="c" name="cytoplasm" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="s70" name="s70" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="RNAP" name="RNAP" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="s70_RNAP" name="s70_RNAP" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Pg" name="Pg" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Pg_s70_RNAP" name="Pg_s70_RNAP" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="s32" name="s32" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="RNAP_s32" name="RNAP_s32" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Ph" name="Ph" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Ph_RNAP_s32" name="Ph_RNAP_s32" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="s32_DnaK" name="s32_DnaK" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="DnaK" name="DnaK" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="s32_FtsH" name="s32_FtsH" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="FtsH" name="FtsH" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Punfold_DnaK" name="Punfold_DnaK" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Pfold" name="Pfold" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="D_s70_RNAP" name="D_s70_RNAP" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="D" name="D" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="D_RNAP_s32" name="D_RNAP_s32" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="RNAP_D" name="RNAP_D" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="s32_DnaK_FtsH" name="s32_DnaK_FtsH" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_s32" name="mRNA_s32" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_DnaK" name="mRNA_DnaK" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_FtsH" name="mRNA_FtsH" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="mRNA_Protein" name="mRNA_Protein" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="r1" name="s70_RNAP formation">
+        <listOfReactants>
+          <speciesReference species="s70" stoichiometry="1"/>
+          <speciesReference species="RNAP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s70_RNAP" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers/>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+              <apply>
+                <times/>
+                <ci>s70</ci>
+                <ci>RNAP</ci>
+              </apply>
+              <ci>s70_RNAP</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r2" name="s70_RNAP dissociation">
+        <listOfReactants>
+          <speciesReference species="s70_RNAP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s70" stoichiometry="1"/>
+          <speciesReference species="RNAP" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers/>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+              <ci>s70_RNAP</ci>
+              <apply>
+                <times/>
+                <ci>s70</ci>
+                <ci>RNAP</ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r3" name="Pg_s70_RNAP formation">
+        <listOfReactants>
+          <speciesReference species="Pg" stoichiometry="1"/>
+          <speciesReference species="s70_RNAP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pg_s70_RNAP" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers/>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+              <apply>
+                <times/>
+                <ci>Pg</ci>
+                <ci>s70_RNAP</ci>
+              </apply>
+              <ci>Pg_s70_RNAP</ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r4" name="Pg_s70_RNAP dissociation">
+        <listOfReactants>
+          <speciesReference species="Pg_s70_RNAP" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pg" stoichiometry="1"/>
+          <speciesReference species="s70_RNAP" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers/>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+              <ci>Pg_s70_RNAP</ci>
+              <apply>
+                <times/>
+                <ci>Pg</ci>
+                <ci>s70_RNAP</ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="r5" name="RNAP_s32 formation">
+        <listOfReactants>
+          <speciesReference species="RNAP" stoichiometry="1"/>
+          <speciesReference species="s32" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_s32" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers/>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <eq/>
+             

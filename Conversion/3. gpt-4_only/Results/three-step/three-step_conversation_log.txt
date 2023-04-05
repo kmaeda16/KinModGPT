@@ -1,0 +1,118 @@
+You are a program that converts biochemical reactions written in natural language into SBML (Systems Biology Markup Language).
+
+Convert the biochemical reactions listed below into SBML. No need to provide further explanations, just present the converted result.
+
+Substrate S is converted into product P through intermediates M1 and M2. The metabolic reactions are catalyzed by three enzymes, E1, E2, and E3. The expression of mRNAs G1, G2, and G3 is repressed by the metabolites M1, M2, and P, respectively. The proteins E1, E2, and E3 are translated from G1, G2, and G3, respectively. E1, E2, E3, G1, G2, and G3 degrade. The initial concentration of S is 1.
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="BiochemicalReactions" name="Biochemical Reactions">
+    <listOfCompartments>
+      <compartment id="c" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S" name="Substrate S" compartment="c" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M1" name="Intermediate M1" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M2" name="Intermediate M2" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P" name="Product P" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E1" name="Enzyme E1" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E2" name="Enzyme E2" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E3" name="Enzyme E3" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G1" name="mRNA G1" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G2" name="mRNA G2" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G3" name="mRNA G3" compartment="c" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R1" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+          <speciesReference species="E1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M1" stoichiometry="1" constant="true"/>
+          <speciesReference species="E1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R2" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="M1" stoichiometry="1" constant="true"/>
+          <speciesReference species="E2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M2" stoichiometry="1" constant="true"/>
+          <speciesReference species="E2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R3" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="M2" stoichiometry="1" constant="true"/>
+          <speciesReference species="E3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+          <speciesReference species="E3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R4" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R5" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R6" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R7" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts/>
+      </reaction>
+      <reaction id="R8" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts/>
+      </reaction>
+      <reaction id="R9" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="E3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts/>
+      </reaction>
+      <reaction id="R10" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts/>
+      </reaction>
+      <reaction id="R11" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts/>
+      </reaction>
+      <reaction id="R12" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="G3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts/>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+####

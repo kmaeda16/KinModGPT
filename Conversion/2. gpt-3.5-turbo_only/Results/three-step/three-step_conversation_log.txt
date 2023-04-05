@@ -1,0 +1,260 @@
+You are a program that converts biochemical reactions written in natural language into SBML (Systems Biology Markup Language).
+
+Convert the biochemical reactions listed below into SBML. No need to provide further explanations, just present the converted result.
+
+Substrate S is converted into product P through intermediates M1 and M2. The metabolic reactions are catalyzed by three enzymes, E1, E2, and E3. The expression of mRNAs G1, G2, and G3 is repressed by the metabolites M1, M2, and P, respectively. The proteins E1, E2, and E3 are translated from G1, G2, and G3, respectively. E1, E2, E3, G1, G2, and G3 degrade. The initial concentration of S is 1.
+```
+<!-- Define the model -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model>
+    <listOfCompartments>
+      <compartment id="compartment" name="default_compartment"/>
+    </listOfCompartments>
+
+    <!-- Define the species -->
+    <listOfSpecies>
+      <species id="S" name="Substrate S" compartment="compartment" initialConcentration="1"/>
+      <species id="M1" name="Intermediate M1" compartment="compartment" initialConcentration="0"/>
+      <species id="M2" name="Intermediate M2" compartment="compartment" initialConcentration="0"/>
+      <species id="P" name="Product P" compartment="compartment" initialConcentration="0"/>
+      <species id="E1" name="Enzyme E1" compartment="compartment" initialConcentration="0"/>
+      <species id="E2" name="Enzyme E2" compartment="compartment" initialConcentration="0"/>
+      <species id="E3" name="Enzyme E3" compartment="compartment" initialConcentration="0"/>
+      <species id="G1" name="mRNA G1" compartment="compartment" initialConcentration="0"/>
+      <species id="G2" name="mRNA G2" compartment="compartment" initialConcentration="0"/>
+      <species id="G3" name="mRNA G3" compartment="compartment" initialConcentration="0"/>
+    </listOfSpecies>
+
+    <!-- Define the reactions -->
+    <listOfReactions>
+      <reaction id="R1" name="S to M1" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M1" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> S </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R2" name="M1 to M2" reversible="false">
+        <listOfReactants>
+          <speciesReference species="M1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k2 </ci>
+              <ci> M1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R3" name="M2 to P" reversible="false">
+        <listOfReactants>
+          <speciesReference species="M2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k3 </ci>
+              <ci> M2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R4" name="E1 synthesis" reversible="false">
+        <listOfReactants>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E1" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k4 </ci>
+              <ci> G1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R5" name="E2 synthesis" reversible="false">
+        <listOfReactants>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k5 </ci>
+              <ci> G2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R6" name="E3 synthesis" reversible="false">
+        <listOfReactants>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E3" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k6 </ci>
+              <ci> G3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R7" name="E1 degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E1" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k7 </ci>
+              <ci> E1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R8" name="E2 degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k8 </ci>
+              <ci> E2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R9" name="E3 degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="E3" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k9 </ci>
+              <ci> E3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R10" name="G1 synthesis" reversible="false">
+        <listOfReactants>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="G1" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k10 </ci>
+              <apply>
+                <minus/>
+                <cn> 1 </cn>
+                <apply>
+                  <divide/>
+                  <ci> M1 </ci>
+                  <apply>
+                    <plus/>
+                    <ci> M1 </ci>
+                    <cn> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R11" name="G2 synthesis" reversible="false">
+        <listOfReactants>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="G2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k11 </ci>
+              <apply>
+                <minus/>
+                <cn> 1 </cn>
+                <apply>
+                  <divide/>
+                  <ci> M2 </ci>
+                  <apply>
+                    <plus/>
+                    <ci> M2 </ci>
+                    <cn> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="R12" name="G3 synthesis" reversible="false">
+        <listOfReactants>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="G3" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k12 </ci>
+              <apply>
+                <minus/>
+                <cn> 1 </cn>
+                <apply>
+
+####

@@ -1,0 +1,1159 @@
+./RunMe.sh
+
+2023/04/04 15:39:53
+
+maedaMac-Pro.local
+
+
+     active environment : kinmodgpt
+    active env location : /Users/maeda/anaconda3/envs/kinmodgpt
+            shell level : 2
+       user config file : /Users/maeda/.condarc
+ populated config files : 
+          conda version : 23.1.0
+    conda-build version : 3.22.0
+         python version : 3.9.13.final.0
+       virtual packages : __archspec=1=x86_64
+                          __osx=10.16=0
+                          __unix=0=0
+       base environment : /Users/maeda/anaconda3  (writable)
+      conda av data dir : /Users/maeda/anaconda3/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/osx-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/osx-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /Users/maeda/anaconda3/pkgs
+                          /Users/maeda/.conda/pkgs
+       envs directories : /Users/maeda/anaconda3/envs
+                          /Users/maeda/.conda/envs
+               platform : osx-64
+             user-agent : conda/23.1.0 requests/2.28.1 CPython/3.9.13 Darwin/21.6.0 OSX/10.16
+                UID:GID : 501:20
+             netrc file : None
+           offline mode : False
+
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+aiohttp=3.8.4=pypi_0
+aiosignal=1.3.1=pypi_0
+antimony=2.13.2=pypi_0
+appdirs=1.4.4=pypi_0
+appnope=0.1.3=pypi_0
+async-timeout=4.0.2=pypi_0
+asynctest=0.13.0=pypi_0
+attrs=22.2.0=pypi_0
+backcall=0.2.0=pypi_0
+ca-certificates=2023.01.10=hecd8cb5_0
+certifi=2022.12.7=py37hecd8cb5_0
+charset-normalizer=3.0.1=pypi_0
+cycler=0.11.0=pypi_0
+debugpy=1.6.6=pypi_0
+decorator=5.1.1=pypi_0
+entrypoints=0.4=pypi_0
+exceptiongroup=1.1.0=pypi_0
+fonttools=4.38.0=pypi_0
+frozenlist=1.3.3=pypi_0
+idna=3.4=pypi_0
+importlib-metadata=6.0.0=pypi_0
+iniconfig=2.0.0=pypi_0
+ipykernel=6.16.2=pypi_0
+ipython=7.34.0=pypi_0
+jedi=0.18.2=pypi_0
+jinja2=3.0.0=pypi_0
+jupyter-client=7.4.9=pypi_0
+jupyter-core=4.12.0=pypi_0
+kiwisolver=1.4.4=pypi_0
+libffi=3.4.2=hecd8cb5_6
+libroadrunner=2.2.1=pypi_0
+markupsafe=2.1.2=pypi_0
+matplotlib=3.5.3=pypi_0
+matplotlib-inline=0.1.6=pypi_0
+multidict=6.0.4=pypi_0
+ncurses=6.4=hcec6c5f_0
+nest-asyncio=1.5.6=pypi_0
+numpy=1.21.6=pypi_0
+openai=0.27.0=pypi_0
+openssl=1.1.1t=hca72f7f_0
+packaging=23.0=pypi_0
+pandas=1.3.5=pypi_0
+parso=0.8.3=pypi_0
+pexpect=4.8.0=pypi_0
+phrasedml=1.1.1=pypi_0
+pickleshare=0.7.5=pypi_0
+pillow=9.4.0=pypi_0
+pip=22.3.1=py37hecd8cb5_0
+plotly=5.13.1=pypi_0
+pluggy=1.0.0=pypi_0
+prompt-toolkit=3.0.38=pypi_0
+psutil=5.9.4=pypi_0
+ptyprocess=0.7.0=pypi_0
+pygments=2.14.0=pypi_0
+pyparsing=3.0.9=pypi_0
+pytest=7.2.1=pypi_0
+python=3.7.16=h218abb5_0
+python-dateutil=2.8.2=pypi_0
+python-libcombine=0.2.19=pypi_0
+python-libnuml=1.1.6=pypi_0
+python-libsbml=5.19.7=pypi_0
+python-libsedml=2.0.32=pypi_0
+pytz=2022.7.1=pypi_0
+pyzmq=25.0.0=pypi_0
+readline=8.2=hca72f7f_0
+requests=2.28.2=pypi_0
+rrplugins=2.1.3=pypi_0
+sbml2matlab=1.2.3.1=pypi_0
+scipy=1.7.3=pypi_0
+setuptools=65.6.3=py37hecd8cb5_0
+six=1.16.0=pypi_0
+sqlite=3.40.1=h880c91c_0
+tellurium=2.2.3=pypi_0
+tenacity=8.2.2=pypi_0
+tk=8.6.12=h5d9f67b_0
+tomli=2.0.1=pypi_0
+tornado=6.2=pypi_0
+tqdm=4.64.1=pypi_0
+traitlets=5.9.0=pypi_0
+typing-extensions=4.5.0=pypi_0
+urllib3=1.26.14=pypi_0
+wcwidth=0.2.6=pypi_0
+wheel=0.38.4=py37hecd8cb5_0
+xz=5.2.10=h6c40b1e_1
+yarl=1.8.2=pypi_0
+zipp=3.15.0=pypi_0
+zlib=1.2.13=h4dc903c_0
+aiohttp==3.8.4
+aiosignal==1.3.1
+antimony==2.13.2
+appdirs==1.4.4
+appnope==0.1.3
+async-timeout==4.0.2
+asynctest==0.13.0
+attrs==22.2.0
+backcall==0.2.0
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
+charset-normalizer==3.0.1
+cycler==0.11.0
+debugpy==1.6.6
+decorator==5.1.1
+entrypoints==0.4
+exceptiongroup==1.1.0
+fonttools==4.38.0
+frozenlist==1.3.3
+idna==3.4
+importlib-metadata==6.0.0
+iniconfig==2.0.0
+ipykernel==6.16.2
+ipython==7.34.0
+jedi==0.18.2
+Jinja2==3.0.0
+jupyter_client==7.4.9
+jupyter_core==4.12.0
+kiwisolver==1.4.4
+libroadrunner==2.2.1
+MarkupSafe==2.1.2
+matplotlib==3.5.3
+matplotlib-inline==0.1.6
+multidict==6.0.4
+nest-asyncio==1.5.6
+numpy==1.21.6
+openai==0.27.0
+packaging==23.0
+pandas==1.3.5
+parso==0.8.3
+pexpect==4.8.0
+phrasedml==1.1.1
+pickleshare==0.7.5
+Pillow==9.4.0
+plotly==5.13.1
+pluggy==1.0.0
+prompt-toolkit==3.0.38
+psutil==5.9.4
+ptyprocess==0.7.0
+Pygments==2.14.0
+pyparsing==3.0.9
+pytest==7.2.1
+python-dateutil==2.8.2
+python-libcombine==0.2.19
+python-libnuml==1.1.6
+python-libsbml==5.19.7
+python-libsedml==2.0.32
+pytz==2022.7.1
+pyzmq==25.0.0
+requests==2.28.2
+rrplugins==2.1.3
+sbml2matlab==1.2.3.1
+scipy==1.7.3
+six==1.16.0
+tellurium==2.2.3
+tenacity==8.2.2
+tomli==2.0.1
+tornado==6.2
+tqdm==4.64.1
+traitlets==5.9.0
+typing_extensions==4.5.0
+urllib3==1.26.14
+wcwidth==0.2.6
+yarl==1.8.2
+zipp==3.15.0
+
+python main.py -i Instruction.txt -d ../input/decay/decay.txt -c Results/decay/decay_conversation_log.txt -a Results/decay/decay_Antimony_model.txt -s Results/decay/decay_SBML_model.xml
+========== Conversation log ==========
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+Protein P decays. The initial concentration is 1 uM.
+- P -> ; kdeg_P * P ; kdeg_P = 1 ; P = 1 uM
+####
+============== Antimony ==============
+P -> ; kdeg_P * P ; kdeg_P = 1 ; P = 1 uM
+
+================ SBML ================
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.13.2 with libSBML version 5.19.5. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="__main" id="__main">
+    <listOfUnitDefinitions>
+      <unitDefinition id="uM"/>
+      <unitDefinition id="uM_litre"/>
+    </listOfUnitDefinitions>
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="P" compartment="default_compartment" initialConcentration="1" substanceUnits="uM_litre" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="kdeg_P" value="1" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="_J0" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_P </ci>
+              <ci> P </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+
+======================================
+Process time: 1.846
+
+python main.py -i Instruction.txt -d ../input/hiv/hiv.txt -c Results/hiv/hiv_conversation_log.txt -a Results/hiv/hiv_Antimony_model.txt -s Results/hiv/hiv_SBML_model.xml
+========== Conversation log ==========
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+Molecules of M bind to form E, and E dissociates back into two Ms. Additionally, E and S can bind to form ES, which then dissociates back into E and S, while E and P can bind to form EP, which dissociates back into E and P. Furthermore, ES can be converted into E and P. E and I can also bind to form EI, which dissociates back into E and I. Finally, EI is converted into EJ.
+- M + M -> E ; ka_M_M_E * M * M ; ka_M_M_E = 1
+- E -> M + M ; kd_E_M_M * E ; kd_E_M_M = 1
+- E + S -> ES ; ka_E_S_ES * E * S ; ka_E_S_ES = 1
+- ES -> E + S ; kd_ES_E_S * ES ; kd_ES_E_S = 1
+- E + P -> EP ; ka_E_P_EP * E * P ; ka_E_P_EP = 1
+- EP -> E + P ; kd_EP_E_P * EP ; kd_EP_E_P = 1
+- ES -> E + P ; kc_ES_E_P * ES ; kc_ES_E_P = 1
+- E + I -> EI ; ka_E_I_EI * E * I ; ka_E_I_EI = 1
+- EI -> E + I ; kd_EI_E_I * EI ; kd_EI_E_I = 1
+- EI -> EJ ; kc_EI_EJ * EI ; kc_EI_EJ = 1
+####
+============== Antimony ==============
+M + M -> E ; ka_M_M_E * M * M ; ka_M_M_E = 1
+E -> M + M ; kd_E_M_M * E ; kd_E_M_M = 1
+E + S -> ES ; ka_E_S_ES * E * S ; ka_E_S_ES = 1
+ES -> E + S ; kd_ES_E_S * ES ; kd_ES_E_S = 1
+E + P -> EP ; ka_E_P_EP * E * P ; ka_E_P_EP = 1
+EP -> E + P ; kd_EP_E_P * EP ; kd_EP_E_P = 1
+ES -> E + P ; kc_ES_E_P * ES ; kc_ES_E_P = 1
+E + I -> EI ; ka_E_I_EI * E * I ; ka_E_I_EI = 1
+EI -> E + I ; kd_EI_E_I * EI ; kd_EI_E_I = 1
+EI -> EJ ; kc_EI_EJ * EI ; kc_EI_EJ = 1
+
+================ SBML ================
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.13.2 with libSBML version 5.19.5. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="__main" id="__main">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="M" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="S" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="ES" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EP" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="I" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EI" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="EJ" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="ka_M_M_E" value="1" constant="true"/>
+      <parameter id="kd_E_M_M" value="1" constant="true"/>
+      <parameter id="ka_E_S_ES" value="1" constant="true"/>
+      <parameter id="kd_ES_E_S" value="1" constant="true"/>
+      <parameter id="ka_E_P_EP" value="1" constant="true"/>
+      <parameter id="kd_EP_E_P" value="1" constant="true"/>
+      <parameter id="kc_ES_E_P" value="1" constant="true"/>
+      <parameter id="ka_E_I_EI" value="1" constant="true"/>
+      <parameter id="kd_EI_E_I" value="1" constant="true"/>
+      <parameter id="kc_EI_EJ" value="1" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="_J0" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="M" stoichiometry="1" constant="true"/>
+          <speciesReference species="M" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_M_M_E </ci>
+              <ci> M </ci>
+              <ci> M </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M" stoichiometry="1" constant="true"/>
+          <speciesReference species="M" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_E_M_M </ci>
+              <ci> E </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ES" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_E_S_ES </ci>
+              <ci> E </ci>
+              <ci> S </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J3" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="ES" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_ES_E_S </ci>
+              <ci> ES </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J4" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_E_P_EP </ci>
+              <ci> E </ci>
+              <ci> P </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J5" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="EP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_EP_E_P </ci>
+              <ci> EP </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J6" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="ES" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_ES_E_P </ci>
+              <ci> ES </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J7" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="I" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EI" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> ka_E_I_EI </ci>
+              <ci> E </ci>
+              <ci> I </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J8" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="EI" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E" stoichiometry="1" constant="true"/>
+          <speciesReference species="I" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kd_EI_E_I </ci>
+              <ci> EI </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J9" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="EI" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="EJ" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_EI_EJ </ci>
+              <ci> EI </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+
+======================================
+Process time: 10.138
+
+python main.py -i Instruction.txt -d ../input/three-step/three-step.txt -c Results/three-step/three-step_conversation_log.txt -a Results/three-step/three-step_Antimony_model.txt -s Results/three-step/three-step_SBML_model.xml
+========== Conversation log ==========
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+Substrate S is converted into product P through intermediates M1 and M2. The metabolic reactions are catalyzed by three enzymes, E1, E2, and E3. The expression of mRNAs G1, G2, and G3 is repressed by the metabolites M1, M2, and P, respectively. The proteins E1, E2, and E3 are translated from G1, G2, and G3, respectively. E1, E2, E3, G1, G2, and G3 degrade. The initial concentration of S is 1.
+- S -> M1 ; kc_S_M1 * S ; kc_S_M1 = 1
+- M1 -> M2 ; kcat_M1_M2 * M1 ; kcat_M1_M2 = 1
+- M2 -> P ; kcat_M2_P * M2 ; kcat_M2_P = 1
+- -> G1 ; km_G1 ; km_G1 = 1
+- -> G2 ; km_G2 ; km_G2 = 1
+- -> G3 ; km_G3 ; km_G3 = 1
+- G1 -> E1 ; kp_G1_E1 * G1 ; kp_G1_E1 = 1
+- G2 -> E2 ; kp_G2_E2 * G2 ; kp_G2_E2 = 1
+- G3 -> E3 ; kp_G3_E3 * G3 ; kp_G3_E3 = 1
+- E1 -> ; kdeg_E1 * E1 ; kdeg_E1 = 1
+- E2 -> ; kdeg_E2 * E2 ; kdeg_E2 = 1
+- E3 -> ; kdeg_E3 * E3 ; kdeg_E3 = 1
+- G1 -> ; kdeg_G1 * G1 ; kdeg_G1 = 1
+- G2 -> ; kdeg_G2 * G2 ; kdeg_G2 = 1
+- G3 -> ; kdeg_G3 * G3 ; kdeg_G3 = 1
+- -> P ; km_P_M2 * M2 / ( Km_P_M2 + M2 ) ; km_P_M2 = 1 ; Km_P_M2 = 1
+- -> G1 ; km_G1_M1 * K_G1_M1 ^ n_G1_M1 / ( K_G1_M1 ^ n_G1_M1 + M1 ^ n_G1_M1 ) ; km_G1_M1 = 1 ; K_G1_M1 = 1 ; n_G1_M1 = 1
+- -> G2 ; km_G2_M2 * K_G2_M2 ^ n_G2_M2 / ( K_G2_M2 ^ n_G2_M2 + M2 ^ n_G2_M2 ) ; km_G2_M2 = 1 ; K_G2_M2 = 1 ; n_G2_M2 = 1
+- -> G3 ; km_G3_P * K_G3_P ^ n_G3_P / ( K_G3_P ^ n_G3_P + P ^ n_G3_P ) ; km_G3_P = 1 ; K_G3_P = 1 ; n_G3_P = 1
+
+Note: The initial concentration of S is not explicitly included in the Antimony language expressions, as it is assumed to be 1.
+####
+============== Antimony ==============
+S -> M1 ; kc_S_M1 * S ; kc_S_M1 = 1
+M1 -> M2 ; kcat_M1_M2 * M1 ; kcat_M1_M2 = 1
+M2 -> P ; kcat_M2_P * M2 ; kcat_M2_P = 1
+-> G1 ; km_G1 ; km_G1 = 1
+-> G2 ; km_G2 ; km_G2 = 1
+-> G3 ; km_G3 ; km_G3 = 1
+G1 -> E1 ; kp_G1_E1 * G1 ; kp_G1_E1 = 1
+G2 -> E2 ; kp_G2_E2 * G2 ; kp_G2_E2 = 1
+G3 -> E3 ; kp_G3_E3 * G3 ; kp_G3_E3 = 1
+E1 -> ; kdeg_E1 * E1 ; kdeg_E1 = 1
+E2 -> ; kdeg_E2 * E2 ; kdeg_E2 = 1
+E3 -> ; kdeg_E3 * E3 ; kdeg_E3 = 1
+G1 -> ; kdeg_G1 * G1 ; kdeg_G1 = 1
+G2 -> ; kdeg_G2 * G2 ; kdeg_G2 = 1
+G3 -> ; kdeg_G3 * G3 ; kdeg_G3 = 1
+-> P ; km_P_M2 * M2 / ( Km_P_M2 + M2 ) ; km_P_M2 = 1 ; Km_P_M2 = 1
+-> G1 ; km_G1_M1 * K_G1_M1 ^ n_G1_M1 / ( K_G1_M1 ^ n_G1_M1 + M1 ^ n_G1_M1 ) ; km_G1_M1 = 1 ; K_G1_M1 = 1 ; n_G1_M1 = 1
+-> G2 ; km_G2_M2 * K_G2_M2 ^ n_G2_M2 / ( K_G2_M2 ^ n_G2_M2 + M2 ^ n_G2_M2 ) ; km_G2_M2 = 1 ; K_G2_M2 = 1 ; n_G2_M2 = 1
+-> G3 ; km_G3_P * K_G3_P ^ n_G3_P / ( K_G3_P ^ n_G3_P + P ^ n_G3_P ) ; km_G3_P = 1 ; K_G3_P = 1 ; n_G3_P = 1
+
+================ SBML ================
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by libAntimony version v2.13.2 with libSBML version 5.19.5. -->
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model metaid="__main" id="__main">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M1" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="M2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="P" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G1" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="G3" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E1" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E2" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="E3" compartment="default_compartment" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="kc_S_M1" value="1" constant="true"/>
+      <parameter id="kcat_M1_M2" value="1" constant="true"/>
+      <parameter id="kcat_M2_P" value="1" constant="true"/>
+      <parameter id="km_G1" value="1" constant="true"/>
+      <parameter id="km_G2" value="1" constant="true"/>
+      <parameter id="km_G3" value="1" constant="true"/>
+      <parameter id="kp_G1_E1" value="1" constant="true"/>
+      <parameter id="kp_G2_E2" value="1" constant="true"/>
+      <parameter id="kp_G3_E3" value="1" constant="true"/>
+      <parameter id="kdeg_E1" value="1" constant="true"/>
+      <parameter id="kdeg_E2" value="1" constant="true"/>
+      <parameter id="kdeg_E3" value="1" constant="true"/>
+      <parameter id="kdeg_G1" value="1" constant="true"/>
+      <parameter id="kdeg_G2" value="1" constant="true"/>
+      <parameter id="kdeg_G3" value="1" constant="true"/>
+      <parameter id="km_P_M2" value="1" constant="true"/>
+      <parameter id="Km_P_M2" value="1" constant="true"/>
+      <parameter id="km_G1_M1" value="1" constant="true"/>
+      <parameter id="K_G1_M1" value="1" constant="true"/>
+      <parameter id="n_G1_M1" value="1" constant="true"/>
+      <parameter id="km_G2_M2" value="1" constant="true"/>
+      <parameter id="K_G2_M2" value="1" constant="true"/>
+      <parameter id="n_G2_M2" value="1" constant="true"/>
+      <parameter id="km_G3_P" value="1" constant="true"/>
+      <parameter id="K_G3_P" value="1" constant="true"/>
+      <parameter id="n_G3_P" value="1" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="_J0" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="S" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kc_S_M1 </ci>
+              <ci> S </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="M1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="M2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcat_M1_M2 </ci>
+              <ci> M1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="M2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcat_M2_P </ci>
+              <ci> M2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J3" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="G1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> km_G1 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J4" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="G2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> km_G2 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J5" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="G3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> km_G3 </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J6" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_G1_E1 </ci>
+              <ci> G1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J7" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_G2_E2 </ci>
+              <ci> G2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J8" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="E3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kp_G3_E3 </ci>
+              <ci> G3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J9" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_E1 </ci>
+              <ci> E1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J10" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_E2 </ci>
+              <ci> E2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J11" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="E3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_E3 </ci>
+              <ci> E3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J12" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G1" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_G1 </ci>
+              <ci> G1 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J13" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_G2 </ci>
+              <ci> G2 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J14" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kdeg_G3 </ci>
+              <ci> G3 </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J15" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="M2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_P_M2 </ci>
+                <ci> M2 </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_P_M2 </ci>
+                <ci> M2 </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J16" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="G1" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="M1"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_G1_M1 </ci>
+                <apply>
+                  <power/>
+                  <ci> K_G1_M1 </ci>
+                  <ci> n_G1_M1 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_G1_M1 </ci>
+                  <ci> n_G1_M1 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> M1 </ci>
+                  <ci> n_G1_M1 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J17" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="G2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="M2"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_G2_M2 </ci>
+                <apply>
+                  <power/>
+                  <ci> K_G2_M2 </ci>
+                  <ci> n_G2_M2 </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_G2_M2 </ci>
+                  <ci> n_G2_M2 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> M2 </ci>
+                  <ci> n_G2_M2 </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="_J18" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="G3" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="P"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> km_G3_P </ci>
+                <apply>
+                  <power/>
+                  <ci> K_G3_P </ci>
+                  <ci> n_G3_P </ci>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <power/>
+                  <ci> K_G3_P </ci>
+                  <ci> n_G3_P </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> P </ci>
+                  <ci> n_G3_P </ci>
+                </apply>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
+
+======================================
+Process time: 25.010
+
+python main.py -i Instruction.txt -d ../input/heat_shock_response/heat_shock_response-1.txt ../input/heat_shock_response/heat_shock_response-2.txt -c Results/heat_shock_response/heat_shock_response_conversation_log.txt -a Results/heat_shock_response/heat_shock_response_Antimony_model.txt -s Results/heat_shock_response/heat_shock_response_SBML_model.xml
+========== Conversation log ==========
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+s70 and RNA polymerase (RNAP) bind together to form s70_RNAP, which then dissociates into s70 and RNAP. Pg and s70_RNAP bind to create Pg_s70_RNAP, which can dissociate back into its components. RNAP and s32 bind to create RNAP_s32, which can dissociate into RNAP and s32. Ph and RNAP_s32 bind to form Ph_RNAP_s32, which then dissociates back into Ph and RNAP_s32. Additionally, s32 and DnaK form s32_DnaK, which can dissociate into s32 and DnaK, while s32 and FtsH bind to create s32_FtsH, which can dissociate back into s32 and FtsH. Similarly, Punfold and DnaK bind to form Punfold_DnaK, which can dissociate into Punfold and DnaK. D and s70_RNAP bind to form D_s70_RNAP, which can dissociate into D and s70_RNAP, and D and RNAP_s32 bind to form D_RNAP_s32, which can dissociate into D and RNAP_s32. RNAP and D bind to form RNAP_D, and RNAP_D can dissociate into RNAP and D. s32_DnaK and FtsH bind to form s32_DnaK_FtsH, which then dissociates into s32_DnaK and FtsH. s32_FtsH is converted into FtsH, while s32_DnaK_FtsH is converted into DnaK and FtsH. Similarly, Pfold is converted into Punfold, while Punfold_DnaK is converted into Pfold and DnaK. 
+- s70 + RNAP -> s70_RNAP ; ka_s70_RNAP * s70 * RNAP ; ka_s70_RNAP = 1
+- s70_RNAP -> s70 + RNAP ; kd_s70_RNAP * s70_RNAP ; kd_s70_RNAP = 1
+- Pg + s70_RNAP -> Pg_s70_RNAP ; ka_Pg_s70_RNAP * Pg * s70_RNAP ; ka_Pg_s70_RNAP = 1
+- Pg_s70_RNAP -> Pg + s70_RNAP ; kd_Pg_s70_RNAP * Pg_s70_RNAP ; kd_Pg_s70_RNAP = 1
+- RNAP + s32 -> RNAP_s32 ; ka_RNAP_s32 * RNAP * s32 ; ka_RNAP_s32 = 1
+- RNAP_s32 -> RNAP + s32 ; kd_RNAP_s32 * RNAP_s32 ; kd_RNAP_s32 = 1
+- Ph + RNAP_s32 -> Ph_RNAP_s32 ; ka_Ph_RNAP_s32 * Ph * RNAP_s32 ; ka_Ph_RNAP_s32 = 1
+- Ph_RNAP_s32 -> Ph + RNAP_s32 ; kd_Ph_RNAP_s32 * Ph_RNAP_s32 ; kd_Ph_RNAP_s32 = 1
+- s32 + DnaK -> s32_DnaK ; ka_s32_DnaK * s32 * DnaK ; ka_s32_DnaK = 1
+- s32_DnaK -> s32 + DnaK ; kd_s32_DnaK * s32_DnaK ; kd_s32_DnaK = 1
+- s32 + FtsH -> s32_FtsH ; ka_s32_FtsH * s32 * FtsH ; ka_s32_FtsH = 1
+- s32_FtsH -> s32 + FtsH ; kd_s32_FtsH * s32_FtsH ; kd_s32_FtsH = 1
+- Punfold + DnaK -> Punfold_DnaK ; ka_Punfold_DnaK * Punfold * DnaK ; ka_Punfold_DnaK = 1
+- Punfold_DnaK -> Punfold + DnaK ; kd_Punfold_DnaK * Punfold_DnaK ; kd_Punfold_DnaK = 1
+- D + s70_RNAP -> D_s70_RNAP ; ka_D_s70_RNAP * D * s70_RNAP ; ka_D_s70_RNAP = 1
+- D_s70_RNAP -> D + s70_RNAP ; kd_D_s70_RNAP * D_s70_RNAP ; kd_D_s70_RNAP = 1
+- D + RNAP_s32 -> D_RNAP_s32 ; ka_D_RNAP_s32 * D * RNAP_s32 ; ka_D_RNAP_s32 = 1
+- D_RNAP_s32 -> D + RNAP_s32 ; kd_D_RNAP_s32 * D_RNAP_s32 ; kd_D_RNAP_s32 = 1
+- RNAP + D -> RNAP_D ; ka_RNAP_D * RNAP * D ; ka_RNAP_D = 1
+- RNAP_D -> RNAP + D ; kd_RNAP_D * RNAP_D ; kd_RNAP_D = 1
+- s32_DnaK + FtsH -> s32_DnaK_FtsH ; ka_s32_DnaK_FtsH * s32_DnaK * FtsH ; ka_s32_DnaK_FtsH = 1
+- s32_DnaK_FtsH -> s32_DnaK + FtsH ; kd_s32_DnaK_FtsH * s32_DnaK_FtsH ; kd_s32_DnaK_FtsH = 1
+- s32_FtsH -> FtsH ; kc_s32_FtsH * s32_FtsH ; kc_s32_FtsH = 1
+- s32_DnaK_FtsH -> DnaK + FtsH ; kc_s32_DnaK_FtsH * s32_DnaK_FtsH ; kc_s32_DnaK_FtsH = 1
+- Pfold -> Punfold ; kc_Pfold_Punfold * Pfold ; kc_Pfold_Punfold = 1
+- Punfold_DnaK -> Pfold + DnaK ; kc_Punfold_DnaK * Punfold_DnaK ; kc_Punfold_DnaK = 1
+
+(Note: The values of the kinetic parameters are set to 1 for simplicity and do not reflect actual values.)
+####
+You are a program that converts biochemical reactions written in natural language into Antimony language. First, remember the following conversion rules.
+
+# Conversion rules
+| Natural language | Antimony language | 
+| E catalyzes the conversion of X to Y | X -> Y ; kcat_E_X_Y * E * X / ( Km_E_X_Y + X ) ; kcat_E_X_Y = 1 ; Km_E_X_Y = 1; E = 1 |
+| X is phosphorylated | X -> X_P ; Vp_X * X / ( Km_X + X ) ; Vp_X = 1 ; Km_X = 1 |
+| X is converted into Y | X -> Y ; kc_X_Y * X; kc_X_Y = 1 |
+| X and Y bind to form Z | X + Y -> Z ; ka_X_Y_Z * X * Y ; ka_X_Y_Z = 1 |
+| X dissociates into Y and Z | X -> Y + Z ; kd_X_Y_Z * X ; kd_X_Y_Z = 1 |
+| X is produced (or transcribed) | -> X ; km_X ; km_X  = 1 |
+| Expression of X is repressed (or negatively regulated or downregulated) by R | -> X ; km_X_R * K_X_R ^ n_X_R / ( K_X_R ^ n_X_R + R ^ n_X_R ) ; km_X_R = 1 ; K_X_R = 1 ; n_X_R = 1 |
+| Expression of X is activated (or positively regulated or upregulated) by A | -> X ; km_X_A * A ^ n_X_A / ( K_X_A ^ n_X_A + A ^ n_X_A ) ; km_X_A = 1 ; K_X_A = 1 ; n_X_A = 1 |
+| Y is translated from X | -> Y ; kp_X_Y * X ; kp_X_Y = 1 |
+| X degrades (or decays) | X -> ; kdeg_X * X ; kdeg_X = 1 |
+| X (concentration) is Y M (or mM or uM or nM or pM) | X = Y |
+
+# Examples
+"The expression of G is negatively regulated by R." is converted into "-> G ; km_G_R * K_G_R ^ n_G_R / ( K_G_R ^ n_G_R + R ^ n_G_R ) ; km_G_R = 1 ; K_G_R = 1 ; n_G_R = 1"
+"G is upregulated by A." is converted into "-> G ; km_G_A * A ^ n_G_A / ( K_G_A ^ n_G_A + A ^ n_G_A ) ; km_G_A = 1 ; K_G_A = 1 ; n_G_A = 1"
+
+Using the conversion rules provided, convert the biochemical reactions listed below into Antimony language. After converting each reaction, create a bullet point list that includes all the resulting expressions. In the list, show one reaction per line. No need to provide further explanations, just present the list. Start each line with '-'.
+
+mRNA_s32 is upregurated by Pg_s70_RNAP. Similarly, mRNA_DnaK and mRNA_FtsH are positively regulated by Ph_RNAP_s32. mRNA_Protein is transcribed without regulation. s32, FtsH, DnaK, and Pfold are translated from mRNA_s32, mRNA_FtsH, mRNA_DnaK, and mRNA_Protein, respectively. All the mRNAs (mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein) decay. s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay. RNAP_s32 is degraded into RNAP. Similarly, Ph_RNAP_s32 is degraded into Ph and RNAP. D_RNAP_s32 is degraded into RNAP_D.
+- mRNA_s32 is upregulated by Pg_s70_RNAP ; -> mRNA_s32 ; km_mRNA_s32_Pg * Pg_s70_RNAP / ( K_mRNA_s32_Pg + Pg_s70_RNAP ) ; km_mRNA_s32_Pg = 1 ; K_mRNA_s32_Pg = 1
+- mRNA_DnaK is positively regulated by Ph_RNAP_s32 ; -> mRNA_DnaK ; km_mRNA_DnaK_Ph * Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph / ( K_mRNA_DnaK_Ph ^ n_mRNA_DnaK_Ph + Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph ) ; km_mRNA_DnaK_Ph = 1 ; K_mRNA_DnaK_Ph = 1 ; n_mRNA_DnaK_Ph = 1
+- mRNA_FtsH is positively regulated by Ph_RNAP_s32 ; -> mRNA_FtsH ; km_mRNA_FtsH_Ph * Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph / ( K_mRNA_FtsH_Ph ^ n_mRNA_FtsH_Ph + Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph ) ; km_mRNA_FtsH_Ph = 1 ; K_mRNA_FtsH_Ph = 1 ; n_mRNA_FtsH_Ph = 1
+- mRNA_Protein is transcribed without regulation ; -> mRNA_Protein ; km_mRNA_Protein = 1
+- s32 is translated from mRNA_s32 ; -> s32 ; kp_mRNA_s32_s32 * mRNA_s32 ; kp_mRNA_s32_s32 = 1
+- FtsH is translated from mRNA_FtsH ; -> FtsH ; kp_mRNA_FtsH_FtsH * mRNA_FtsH ; kp_mRNA_FtsH_FtsH = 1
+- DnaK is translated from mRNA_DnaK ; -> DnaK ; kp_mRNA_DnaK_DnaK * mRNA_DnaK ; kp_mRNA_DnaK_DnaK = 1
+- Pfold is translated from mRNA_Protein ; -> Pfold ; kp_mRNA_Protein_Pfold * mRNA_Protein ; kp_mRNA_Protein_Pfold = 1
+- mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein decay ; mRNA_s32 -> ; kdeg_mRNA_s32 * mRNA_s32 ; kdeg_mRNA_s32 = 1 ; mRNA_DnaK -> ; kdeg_mRNA_DnaK * mRNA_DnaK ; kdeg_mRNA_DnaK = 1 ; mRNA_FtsH -> ; kdeg_mRNA_FtsH * mRNA_FtsH ; kdeg_mRNA_FtsH = 1 ; mRNA_Protein -> ; kdeg_mRNA_Protein * mRNA_Protein ; kdeg_mRNA_Protein = 1
+- s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay ; s32 -> ; kdeg_s32 * s32 ; kdeg_s32 = 1 ; s32_DnaK -> ; kdeg_s32_DnaK * s32_DnaK ; kdeg_s32_DnaK = 1 ; s32_FtsH -> ; kdeg_s32_FtsH * s32_FtsH ; kdeg_s32_FtsH = 1 ; s32_DnaK_FtsH -> ; kdeg_s32_DnaK_FtsH * s32_DnaK_FtsH ; kdeg_s32_DnaK_FtsH = 1 ; FtsH -> ; kdeg_FtsH * FtsH ; kdeg_FtsH = 1 ; DnaK -> ; kdeg_DnaK * DnaK ; kdeg_DnaK = 1 ; Punfold_DnaK -> ; kdeg_Punfold_DnaK * Punfold_DnaK ; kdeg_Punfold_DnaK = 1 ; Pfold -> ; kdeg_Pfold * Pfold ; kdeg_Pfold = 1 ; Punfold -> ; kdeg_Punfold * Punfold ; kdeg_Punfold = 1
+- RNAP_s32 is degraded into RNAP ; RNAP_s32 -> RNAP ; kdeg_RNAP_s32 * RNAP_s32 ; kdeg_RNAP_s32 = 1
+- Ph_RNAP_s32 is degraded into Ph and RNAP ; Ph_RNAP_s32 -> Ph + RNAP ; kdeg_Ph_RNAP_s32 * Ph_RNAP_s32 ; kdeg_Ph_RNAP_s32 = 1
+- D_RNAP_s32 is degraded into RNAP_D ; D_RNAP_s32 -> RNAP_D ; kdeg_D_RNAP_s32 * D_RNAP_s32 ; kdeg_D_RNAP_s32 = 1
+####
+============== Antimony ==============
+s70 + RNAP -> s70_RNAP ; ka_s70_RNAP * s70 * RNAP ; ka_s70_RNAP = 1
+s70_RNAP -> s70 + RNAP ; kd_s70_RNAP * s70_RNAP ; kd_s70_RNAP = 1
+Pg + s70_RNAP -> Pg_s70_RNAP ; ka_Pg_s70_RNAP * Pg * s70_RNAP ; ka_Pg_s70_RNAP = 1
+Pg_s70_RNAP -> Pg + s70_RNAP ; kd_Pg_s70_RNAP * Pg_s70_RNAP ; kd_Pg_s70_RNAP = 1
+RNAP + s32 -> RNAP_s32 ; ka_RNAP_s32 * RNAP * s32 ; ka_RNAP_s32 = 1
+RNAP_s32 -> RNAP + s32 ; kd_RNAP_s32 * RNAP_s32 ; kd_RNAP_s32 = 1
+Ph + RNAP_s32 -> Ph_RNAP_s32 ; ka_Ph_RNAP_s32 * Ph * RNAP_s32 ; ka_Ph_RNAP_s32 = 1
+Ph_RNAP_s32 -> Ph + RNAP_s32 ; kd_Ph_RNAP_s32 * Ph_RNAP_s32 ; kd_Ph_RNAP_s32 = 1
+s32 + DnaK -> s32_DnaK ; ka_s32_DnaK * s32 * DnaK ; ka_s32_DnaK = 1
+s32_DnaK -> s32 + DnaK ; kd_s32_DnaK * s32_DnaK ; kd_s32_DnaK = 1
+s32 + FtsH -> s32_FtsH ; ka_s32_FtsH * s32 * FtsH ; ka_s32_FtsH = 1
+s32_FtsH -> s32 + FtsH ; kd_s32_FtsH * s32_FtsH ; kd_s32_FtsH = 1
+Punfold + DnaK -> Punfold_DnaK ; ka_Punfold_DnaK * Punfold * DnaK ; ka_Punfold_DnaK = 1
+Punfold_DnaK -> Punfold + DnaK ; kd_Punfold_DnaK * Punfold_DnaK ; kd_Punfold_DnaK = 1
+D + s70_RNAP -> D_s70_RNAP ; ka_D_s70_RNAP * D * s70_RNAP ; ka_D_s70_RNAP = 1
+D_s70_RNAP -> D + s70_RNAP ; kd_D_s70_RNAP * D_s70_RNAP ; kd_D_s70_RNAP = 1
+D + RNAP_s32 -> D_RNAP_s32 ; ka_D_RNAP_s32 * D * RNAP_s32 ; ka_D_RNAP_s32 = 1
+D_RNAP_s32 -> D + RNAP_s32 ; kd_D_RNAP_s32 * D_RNAP_s32 ; kd_D_RNAP_s32 = 1
+RNAP + D -> RNAP_D ; ka_RNAP_D * RNAP * D ; ka_RNAP_D = 1
+RNAP_D -> RNAP + D ; kd_RNAP_D * RNAP_D ; kd_RNAP_D = 1
+s32_DnaK + FtsH -> s32_DnaK_FtsH ; ka_s32_DnaK_FtsH * s32_DnaK * FtsH ; ka_s32_DnaK_FtsH = 1
+s32_DnaK_FtsH -> s32_DnaK + FtsH ; kd_s32_DnaK_FtsH * s32_DnaK_FtsH ; kd_s32_DnaK_FtsH = 1
+s32_FtsH -> FtsH ; kc_s32_FtsH * s32_FtsH ; kc_s32_FtsH = 1
+s32_DnaK_FtsH -> DnaK + FtsH ; kc_s32_DnaK_FtsH * s32_DnaK_FtsH ; kc_s32_DnaK_FtsH = 1
+Pfold -> Punfold ; kc_Pfold_Punfold * Pfold ; kc_Pfold_Punfold = 1
+Punfold_DnaK -> Pfold + DnaK ; kc_Punfold_DnaK * Punfold_DnaK ; kc_Punfold_DnaK = 1
+mRNA_s32 is upregulated by Pg_s70_RNAP ; -> mRNA_s32 ; km_mRNA_s32_Pg * Pg_s70_RNAP / ( K_mRNA_s32_Pg + Pg_s70_RNAP ) ; km_mRNA_s32_Pg = 1 ; K_mRNA_s32_Pg = 1
+mRNA_DnaK is positively regulated by Ph_RNAP_s32 ; -> mRNA_DnaK ; km_mRNA_DnaK_Ph * Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph / ( K_mRNA_DnaK_Ph ^ n_mRNA_DnaK_Ph + Ph_RNAP_s32 ^ n_mRNA_DnaK_Ph ) ; km_mRNA_DnaK_Ph = 1 ; K_mRNA_DnaK_Ph = 1 ; n_mRNA_DnaK_Ph = 1
+mRNA_FtsH is positively regulated by Ph_RNAP_s32 ; -> mRNA_FtsH ; km_mRNA_FtsH_Ph * Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph / ( K_mRNA_FtsH_Ph ^ n_mRNA_FtsH_Ph + Ph_RNAP_s32 ^ n_mRNA_FtsH_Ph ) ; km_mRNA_FtsH_Ph = 1 ; K_mRNA_FtsH_Ph = 1 ; n_mRNA_FtsH_Ph = 1
+mRNA_Protein is transcribed without regulation ; -> mRNA_Protein ; km_mRNA_Protein = 1
+s32 is translated from mRNA_s32 ; -> s32 ; kp_mRNA_s32_s32 * mRNA_s32 ; kp_mRNA_s32_s32 = 1
+FtsH is translated from mRNA_FtsH ; -> FtsH ; kp_mRNA_FtsH_FtsH * mRNA_FtsH ; kp_mRNA_FtsH_FtsH = 1
+DnaK is translated from mRNA_DnaK ; -> DnaK ; kp_mRNA_DnaK_DnaK * mRNA_DnaK ; kp_mRNA_DnaK_DnaK = 1
+Pfold is translated from mRNA_Protein ; -> Pfold ; kp_mRNA_Protein_Pfold * mRNA_Protein ; kp_mRNA_Protein_Pfold = 1
+mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein decay ; mRNA_s32 -> ; kdeg_mRNA_s32 * mRNA_s32 ; kdeg_mRNA_s32 = 1 ; mRNA_DnaK -> ; kdeg_mRNA_DnaK * mRNA_DnaK ; kdeg_mRNA_DnaK = 1 ; mRNA_FtsH -> ; kdeg_mRNA_FtsH * mRNA_FtsH ; kdeg_mRNA_FtsH = 1 ; mRNA_Protein -> ; kdeg_mRNA_Protein * mRNA_Protein ; kdeg_mRNA_Protein = 1
+s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay ; s32 -> ; kdeg_s32 * s32 ; kdeg_s32 = 1 ; s32_DnaK -> ; kdeg_s32_DnaK * s32_DnaK ; kdeg_s32_DnaK = 1 ; s32_FtsH -> ; kdeg_s32_FtsH * s32_FtsH ; kdeg_s32_FtsH = 1 ; s32_DnaK_FtsH -> ; kdeg_s32_DnaK_FtsH * s32_DnaK_FtsH ; kdeg_s32_DnaK_FtsH = 1 ; FtsH -> ; kdeg_FtsH * FtsH ; kdeg_FtsH = 1 ; DnaK -> ; kdeg_DnaK * DnaK ; kdeg_DnaK = 1 ; Punfold_DnaK -> ; kdeg_Punfold_DnaK * Punfold_DnaK ; kdeg_Punfold_DnaK = 1 ; Pfold -> ; kdeg_Pfold * Pfold ; kdeg_Pfold = 1 ; Punfold -> ; kdeg_Punfold * Punfold ; kdeg_Punfold = 1
+RNAP_s32 is degraded into RNAP ; RNAP_s32 -> RNAP ; kdeg_RNAP_s32 * RNAP_s32 ; kdeg_RNAP_s32 = 1
+Ph_RNAP_s32 is degraded into Ph and RNAP ; Ph_RNAP_s32 -> Ph + RNAP ; kdeg_Ph_RNAP_s32 * Ph_RNAP_s32 ; kdeg_Ph_RNAP_s32 = 1
+D_RNAP_s32 is degraded into RNAP_D ; D_RNAP_s32 -> RNAP_D ; kdeg_D_RNAP_s32 * D_RNAP_s32 ; kdeg_D_RNAP_s32 = 1
+
+Traceback (most recent call last):
+  File "main.py", line 38, in <module>
+    prompt_list,response_list,GPT_output,ant_model,sbml_model = kmg.KinModGPT(instruction,model_desctription_list,api_key_path)
+  File "/Users/maeda/Desktop/Projects/GitHub/Public/KinModGPT/Conversion/5. KinModGPT_gpt-3.5-turbo/KinModGPT.py", line 82, in KinModGPT
+    sbml_model = te.antimonyToSBML(ant_model)
+  File "/Users/maeda/anaconda3/envs/kinmodgpt/lib/python3.7/site-packages/tellurium/tellurium.py", line 602, in antimonyToSBML
+    _checkAntimonyReturnCode(code)
+  File "/Users/maeda/anaconda3/envs/kinmodgpt/lib/python3.7/site-packages/tellurium/tellurium.py", line 294, in _checkAntimonyReturnCode
+    raise Exception('Antimony: {}'.format(antimony.getLastError()))
+Exception: Antimony: Error in model string, line 27:  syntax error, unexpected element name, expecting end of line or ';' or '\n'
+

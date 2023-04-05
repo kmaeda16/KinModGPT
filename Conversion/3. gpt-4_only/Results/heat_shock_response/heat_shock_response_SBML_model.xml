@@ -1,0 +1,191 @@
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="BiochemicalReactions">
+    <listOfSpecies>
+      <species id="s70" name="s70"/>
+      <species id="RNAP" name="RNA_polymerase"/>
+      <species id="s70_RNAP" name="s70_RNA_polymerase"/>
+      <species id="Pg" name="Pg"/>
+      <species id="Pg_s70_RNAP" name="Pg_s70_RNA_polymerase"/>
+      <species id="s32" name="s32"/>
+      <species id="RNAP_s32" name="RNAP_s32"/>
+      <species id="Ph" name="Ph"/>
+      <species id="Ph_RNAP_s32" name="Ph_RNAP_s32"/>
+      <species id="DnaK" name="DnaK"/>
+      <species id="s32_DnaK" name="s32_DnaK"/>
+      <species id="FtsH" name="FtsH"/>
+      <species id="s32_FtsH" name="s32_FtsH"/>
+      <species id="Punfold" name="Punfold"/>
+      <species id="Punfold_DnaK" name="Punfold_DnaK"/>
+      <species id="D" name="D"/>
+      <species id="D_s70_RNAP" name="D_s70_RNAP"/>
+      <species id="D_RNAP_s32" name="D_RNAP_s32"/>
+      <species id="RNAP_D" name="RNAP_D"/>
+      <species id="s32_DnaK_FtsH" name="s32_DnaK_FtsH"/>
+      <species id="Pfold" name="Pfold"/>
+      <species id="mRNA_s32" name="mRNA_s32"/>
+      <species id="mRNA_DnaK" name="mRNA_DnaK"/>
+      <species id="mRNA_FtsH" name="mRNA_FtsH"/>
+      <species id="mRNA_Protein" name="mRNA_Protein"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="R1" reversible="true">
+        <listOfReactants>
+          <speciesReference species="s70"/>
+          <speciesReference species="RNAP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s70_RNAP"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R2" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Pg"/>
+          <speciesReference species="s70_RNAP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pg_s70_RNAP"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R3" reversible="true">
+        <listOfReactants>
+          <speciesReference species="RNAP"/>
+          <speciesReference species="s32"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_s32"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R4" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Ph"/>
+          <speciesReference species="RNAP_s32"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Ph_RNAP_s32"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R5" reversible="true">
+        <listOfReactants>
+          <speciesReference species="s32"/>
+          <speciesReference species="DnaK"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_DnaK"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R6" reversible="true">
+        <listOfReactants>
+          <speciesReference species="s32"/>
+          <speciesReference species="FtsH"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_FtsH"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R7" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Punfold"/>
+          <speciesReference species="DnaK"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Punfold_DnaK"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R8" reversible="true">
+        <listOfReactants>
+          <speciesReference species="D"/>
+          <speciesReference species="s70_RNAP"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D_s70_RNAP"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R9" reversible="true">
+        <listOfReactants>
+          <speciesReference species="D"/>
+          <speciesReference species="RNAP_s32"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="D_RNAP_s32"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R10" reversible="true">
+        <listOfReactants>
+          <speciesReference species="RNAP"/>
+          <speciesReference species="D"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_D"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R11" reversible="true">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK"/>
+          <speciesReference species="FtsH"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="s32_DnaK_FtsH"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R12" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s32_FtsH"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="FtsH"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R13" reversible="false">
+        <listOfReactants>
+          <speciesReference species="s32_DnaK_FtsH"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DnaK"/>
+          <speciesReference species="FtsH"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R14" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Pfold"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Punfold"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R15" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Punfold_DnaK"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pfold"/>
+          <speciesReference species="DnaK"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R16" reversible="false">
+        <listOfReactants>
+          <speciesReference species="RNAP_s32"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R17" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Ph_RNAP_s32"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Ph"/>
+          <speciesReference species="RNAP"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="R18" reversible="false">
+        <listOfReactants>
+          <speciesReference species="D_RNAP_s32"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="RNAP_D"/>
+        </listOfProducts>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

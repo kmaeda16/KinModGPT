@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<ekb>
+	<input type="text">
+		<paragraphs>
+			<paragraph file="/Users/wbeaumont/drum/etc/Data/WP/TEXT00038_IO-488277" id="paragraph37">s70 and RNA polymerase (RNAP) bind together to form s70_RNAP, which then dissociates into s70 and RNAP. Pg and s70_RNAP bind to create Pg_s70_RNAP, which can dissociate back into its components. RNAP and s32 bind to create RNAP_s32, which can dissociate into RNAP and s32. Ph and RNAP_s32 bind to form Ph_RNAP_s32, which then dissociates back into Ph and RNAP_s32. Additionally, s32 and DnaK form s32_DnaK, which can dissociate into s32 and DnaK, while s32 and FtsH bind to create s32_FtsH, which can dissociate back into s32 and FtsH. Similarly, Punfold and DnaK bind to form Punfold_DnaK, which can dissociate into Punfold and DnaK. D and s70_RNAP bind to form D_s70_RNAP, which can dissociate into D and s70_RNAP, and D and RNAP_s32 bind to form D_RNAP_s32, which can dissociate into D and RNAP_s32. RNAP and D bind to form RNAP_D, and RNAP_D can dissociate into RNAP and D. s32_DnaK and FtsH bind to form s32_DnaK_FtsH, which then dissociates into s32_DnaK and FtsH. s32_FtsH is converted into FtsH, while s32_DnaK_FtsH is converted into DnaK and FtsH. Similarly, Pfold is converted into Punfold, while Punfold_DnaK is converted into Pfold and DnaK.mRNA_s32 is upregurated by Pg_s70_RNAP. Similarly, mRNA_DnaK and mRNA_FtsH are positively regulated by Ph_RNAP_s32. mRNA_Protein is transcribed without regulation. s32, FtsH, DnaK, and Pfold are translated from mRNA_s32, mRNA_FtsH, mRNA_DnaK, and mRNA_Protein, respectively. All the mRNAs (mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein) decay. s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay. RNAP_s32 is degraded into RNAP. Similarly, Ph_RNAP_s32 is degraded into Ph and RNAP. D_RNAP_s32 is degraded into RNAP_D.</paragraph>
+		</paragraphs>
+		<sentences>
+			<sentence id="95" pid="paragraph37">s70 and RNA polymerase (RNAP) bind together to form s70_RNAP, which then dissociates into s70 and RNAP.</sentence>
+			<sentence id="96" pid="paragraph37">Pg and s70_RNAP bind to create Pg_s70_RNAP, which can dissociate back into its components.</sentence>
+			<sentence id="97" pid="paragraph37">RNAP and s32 bind to create RNAP_s32, which can dissociate into RNAP and s32.</sentence>
+			<sentence id="98" pid="paragraph37">Ph and RNAP_s32 bind to form Ph_RNAP_s32, which then dissociates back into Ph and RNAP_s32.</sentence>
+			<sentence id="99" pid="paragraph37">Additionally, s32 and DnaK form s32_DnaK, which can dissociate into s32 and DnaK, while s32 and FtsH bind to create s32_FtsH, which can dissociate back into s32 and FtsH.</sentence>
+			<sentence id="100" pid="paragraph37">Similarly, Punfold and DnaK bind to form Punfold_DnaK, which can dissociate into Punfold and DnaK.</sentence>
+			<sentence id="101" pid="paragraph37">D and s70_RNAP bind to form D_s70_RNAP, which can dissociate into D and s70_RNAP, and D and RNAP_s32 bind to form D_RNAP_s32, which can dissociate into D and RNAP_s32.</sentence>
+			<sentence id="102" pid="paragraph37">RNAP and D bind to form RNAP_D, and RNAP_D can dissociate into RNAP and D. s32_DnaK and FtsH bind to form s32_DnaK_FtsH, which then dissociates into s32_DnaK and FtsH.</sentence>
+			<sentence id="103" pid="paragraph37">s32_FtsH is converted into FtsH, while s32_DnaK_FtsH is converted into DnaK and FtsH.</sentence>
+			<sentence id="104" pid="paragraph37">Similarly, Pfold is converted into Punfold, while Punfold_DnaK is converted into Pfold and DnaK.</sentence>
+			<sentence id="105" pid="paragraph37">mRNA_s32 is upregurated by Pg_s70_RNAP.</sentence>
+			<sentence id="106" pid="paragraph37">Similarly, mRNA_DnaK and mRNA_FtsH are positively regulated by Ph_RNAP_s32.</sentence>
+			<sentence id="107" pid="paragraph37">mRNA_Protein is transcribed without regulation.</sentence>
+			<sentence id="108" pid="paragraph37">s32, FtsH, DnaK, and Pfold are translated from mRNA_s32, mRNA_FtsH, mRNA_DnaK, and mRNA_Protein, respectively.</sentence>
+			<sentence id="109" pid="paragraph37">All the mRNAs (mRNA_s32, mRNA_DnaK, mRNA_FtsH, and mRNA_Protein) decay.</sentence>
+			<sentence id="110" pid="paragraph37">s32, s32_DnaK, s32_FtsH, s32_DnaK_FtsH, FtsH, DnaK, Punfold_DnaK, Pfold, and Punfold decay.</sentence>
+			<sentence id="111" pid="paragraph37">RNAP_s32 is degraded into RNAP.</sentence>
+			<sentence id="112" pid="paragraph37">Similarly, Ph_RNAP_s32 is degraded into Ph and RNAP.</sentence>
+			<sentence id="113" pid="paragraph37">D_RNAP_s32 is degraded into RNAP_D.</sentence>
+		</sentences>
+	</input>
+	<TERM dbid="CHEBI:30396" end="283" id="V499559" lisp="(ONT::TERM ONT::V499559 ONT::MOLECULE :NAME W::PH :DRUM ((:DRUM (TERM :ID CHEBI::|30396| :NAME &quot;phenyl group&quot; :SCORE 0.55812 :MATCHES ((MATCH :SCORE 0.55812 :MATCHED &quot;Ph&quot; :STATUS &quot;RELATED synonym&quot; :MAYBE-DEPLURALIZED 1 :SURELY-DEPLURALIZED 0 :DEPLURALIZATION-SCORE 0.85528755 :ALL-CAPS-INITIAL-CAP 1) (MATCH :SCORE 0.55745 :MATCHED &quot;Ph&quot; :STATUS &quot;RELATED synonym&quot; :SENTENCE-CAP-INITIAL-CAP 1)) :ONT-TYPES (ONT::MOLECULE)) (SPECIALIST :EUI E0699661 :CITATION-FORM &quot;PH&quot; :MATCHES ((MATCH :SCORE 0.85529 :MATCHED &quot;PH&quot; :SENTENCE-CAP-ALL-CAPS 1)) :ABBREVIATION-OF ((SPECIALIST :EUI E0047202 :CITATION-FORM &quot;phenol&quot;) (SPECIALIST :EUI E0047227 :CITATION-FORM &quot;fentolamin&quot;) (SPECIALIST :EUI E0047233 :CITATION-FORM &quot;phenylephrine&quot;) (SPECIALIST :EUI E0047781 :CITATION-FORM &quot;physostigmine&quot;)) :ACRONYM-OF ((SPECIALIST :EUI E0051097 :CITATION-FORM &quot;pulmonaryhypertension&quot;) (SPECIALIST :EUI E0699651 :CITATION-FORM &quot;partial hepatectomy&quot;) (SPECIALIST :EUI E0049011 :CITATION-FORM &quot;portal hypertension&quot;) (SPECIALIST :EUI E0049146 :CITATION-FORM &quot;posterior hypothalamus&quot;) (SPECIALIST :EUI E0337873 :CITATION-FORM &quot;prepositus hypoglossi&quot;) (SPECIALIST :EUI E0337872 :CITATION-FORM &quot;nucleus prepositus hypoglossi&quot;) (SPECIALIST :EUI E0050006 :CITATION-FORM &quot;primary hyperoxaluria&quot;) (SPECIALIST :EUI E0699652 :CITATION-FORM &quot;Polyhomeotic&quot;) (SPECIALIST :EUI E0351636 :CITATION-FORM &quot;prolylhydroxylase&quot;) (SPECIALIST :EUI E0699653 :CITATION-FORM &quot;pulmonary hypoplasia&quot;) (SPECIALIST :EUI E0699654 :CITATION-FORM &quot;proportional hazard&quot;) (SPECIALIST :EUI E0200194 :CITATION-FORM &quot;pulmonary hemorrhage&quot;) (SPECIALIST :EUI E0049332 :CITATION-FORM &quot;postural hypotension&quot;) (SPECIALIST :EUI E0699655 :CITATION-FORM &quot;palmar hyperhidrosis&quot;) (SPECIALIST :EUI E0051004 :CITATION-FORM &quot;public health&quot;) (SPECIALIST :EUI E0699656 :CITATION-FORM &quot;periventricular heterotopia&quot;) (SPECIALIST :EUI E0699657 :CITATION-FORM &quot;plant height&quot;) (SPECIALIST :EUI E0047231 :CITATION-FORM &quot;phenylalanine hydroxylase&quot;) (SPECIALIST :EUI E0212758 :CITATION-FORM &quot;posterior hypothalamic nucleus&quot;) (SPECIALIST :EUI E0212609 :CITATION-FORM &quot;primary hypertension&quot;) (SPECIALIST :EUI E0699658 :CITATION-FORM &quot;phenol hydroxylase&quot;) (SPECIALIST :EUI E0699659 :CITATION-FORM &quot;peak height&quot;) (SPECIALIST :EUI E0047238 :CITATION-FORM &quot;phenylhydrazine&quot;) (SPECIALIST :EUI E0699660 :CITATION-FORM &quot;pubic hair stage&quot;) (SPECIALIST :EUI E0586867 :CITATION-FORM &quot;pulmonary arterial hypertension&quot;) (SPECIALIST :EUI E0644175 :CITATION-FORM &quot;primary hyperparathyroidism&quot;))) (SPECIALIST :EUI E0004887 :CITATION-FORM &quot;Ph&quot; :MATCHES ((MATCH :SCORE 0.85529 :MATCHED &quot;Ph&quot; :SENTENCE-CAP-INITIAL-CAP 1)) :ABBREVIATION-OF ((SPECIALIST :EUI E0047228 :CITATION-FORM &quot;phenyl&quot;) (SPECIALIST :EUI E0047202 :CITATION-FORM &quot;phenol&quot;) (SPECIALIST :EUI E0047227 :CITATION-FORM &quot;fentolamin&quot;) (SPECIALIST :EUI E0047233 :CITATION-FORM &quot;phenylephrine&quot;) (SPECIALIST :EUI E0047781 :CITATION-FORM &quot;physostigmine&quot;) (SPECIALIST :EUI E0004895 :CITATION-FORM &quot;Philadelphia chromosome&quot;)) :ACRONYM-OF ((SPECIALIST :EUI E0699652 :CITATION-FORM &quot;Polyhomeotic&quot;))) (SPECIALIST :EUI E0044956 :CITATION-FORM &quot;pH&quot; :MATCHES ((MATCH :SCORE 0.68831 :MATCHED &quot;pH&quot; :SENTENCE-CAP-MIXED-CAPS 1))))))" paragraph="paragraph37" rule="-SIMPLE-REF" start="273" uttnum="98">
+		<type>ONT::MOLECULE</type>
+		<name>PH</name>
+		<drum-terms>
+			<drum-term dbid="CHEBI:30396" match-score="0.55812" matched-name="Ph" name="phenyl group">
+				<types>
+					<type>ONT::MOLECULE</type>
+				</types>
+			</drum-term>
+		</drum-terms>
+		<text>Ph and RNA</text>
+	</TERM>
+	<EVENT end="314" id="V499620" lisp="(ONT::EVENT ONT::V499620 ONT::BIND :FORCE ONT::TRUE :AGENT ONT::V501089 :TENSE W::PRES)" paragraph="paragraph37" rule="-RULE40_4_AFFECTED_AFFECTED1-NONE" start="283" uttnum="98">
+		<type>ONT::BIND</type>
+		<force>ONT::TRUE</force>
+		<predicate end="314" id="V499620" start="283">
+			<type>ONT::BIND</type>
+			<text>P_s32 bind to form Ph_RNAP_s32,</text>
+		</predicate>
+		<arg1 end="289" id="V501089" role=":AGENT" start="283">
+			<type>ONT::SEQUENCE</type>
+			<text normalization="">P_s32</text>
+		</arg1>
+		<text>P_s32 bind to form Ph_RNAP_s32,</text>
+	</EVENT>
+	<EVENT end="673" id="V513331" lisp="(ONT::EVENT ONT::V513331 ONT::BIND :FORCE ONT::TRUE :AGENT ONT::V513289 :TENSE W::PRES)" paragraph="paragraph37" rule="-RULE40_4_AFFECTED_AFFECTED1-NONE" start="635" uttnum="101">
+		<type>ONT::BIND</type>
+		<force>ONT::TRUE</force>
+		<predicate end="673" id="V513331" start="635">
+			<type>ONT::BIND</type>
+			<text>D and s70_RNAP bind to form D_s70_RNAP</text>
+		</predicate>
+		<arg1 end="650" id="V513289" role=":AGENT" start="635">
+			<type>ONT::REFERENTIAL-SEM</type>
+			<text normalization="">D and s70_RNAP</text>
+		</arg1>
+		<text>D and s70_RNAP bind to form D_s70_RNAP</text>
+	</EVENT>
+	<TERM end="637" id="V513281" lisp="(ONT::TERM ONT::V513281 ONT::NUTRITIONAL-SUPPLEMENT :NAME W::D)" paragraph="paragraph37" rule="-SIMPLE-REF" start="635" uttnum="101">
+		<type>ONT::NUTRITIONAL-SUPPLEMENT</type>
+		<name>D</name>
+		<text>D</text>
+	</TERM>
+	<TERM end="716" id="V525742" lisp="(ONT::TERM ONT::V525742 ONT::RNA :NAME W::RNA)" paragraph="paragraph37" rule="-SIMPLE-REF" start="695" uttnum="101">
+		<type>ONT::RNA</type>
+		<name>RNA</name>
+		<text>into D and s70_RNAP,</text>
+	</TERM>
+	<TERM end="716" id="V525716" lisp="(ONT::TERM ONT::V525716 ONT::ORGANIZATION :NAME W::NT)" paragraph="paragraph37" rule="-SIMPLE-REF" start="695" uttnum="101">
+		<type>ONT::ORGANIZATION</type>
+		<name>NT</name>
+		<text>into D and s70_RNAP,</text>
+	</TERM>
+	<TERM end="749" id="V539498" lisp="(ONT::TERM ONT::V539498 ONT::SHAPE :NAME W::FORM)" paragraph="paragraph37" rule="-SIMPLE-REF" start="741" uttnum="101">
+		<type>ONT::SHAPE</type>
+		<name>FORM</name>
+		<text>to form</text>
+	</TERM>
+	<TERM end="723" id="V539383" lisp="(ONT::TERM ONT::V539383 ONT::NUTRITIONAL-SUPPLEMENT :NAME W::D)" paragraph="paragraph37" rule="-SIMPLE-REF" start="721" uttnum="101">
+		<type>ONT::NUTRITIONAL-SUPPLEMENT</type>
+		<name>D</name>
+		<text>D</text>
+	</TERM>
+	<TERM dbid="XFAM:PF01827" end="1554" id="V554573" lisp="(ONT::TERM ONT::V554573 ONT::MOLECULAR-DOMAIN :NAME W::FTSH :DRUM ((:DRUM (TERM :ID XFAM::PF01827 :NAME &quot;FTH&quot; :SCORE 0.69211 :MATCHES ((MATCH :SCORE 0.69211 :MATCHED &quot;FTH&quot; :STATUS &quot;ID&quot; :MAYBE-DEPLURALIZED 1 :SURELY-DEPLURALIZED 1 :DEPLURALIZATION-SCORE 0.6883117 :EXACT 1)) :ONT-TYPES (ONT::MOLECULAR-DOMAIN)))))" paragraph="paragraph37" rule="-SIMPLE-REF" start="1542" uttnum="110">
+		<type>ONT::MOLECULAR-DOMAIN</type>
+		<name>FTSH</name>
+		<drum-terms>
+			<drum-term dbid="XFAM:PF01827" match-score="0.69211" matched-name="FTH" name="FTH">
+				<types>
+					<type>ONT::MOLECULAR-DOMAIN</type>
+				</types>
+			</drum-term>
+		</drum-terms>
+		<text>FtsH, DnaK,</text>
+	</TERM>
+	<TERM dbid="CHEBI:30396" end="1669" id="V572500" lisp="(ONT::TERM ONT::V572500 ONT::MOLECULE :NAME W::PH :DRUM ((:DRUM (TERM :ID CHEBI::|30396| :NAME &quot;phenyl group&quot; :SCORE 0.56098 :MATCHES ((MATCH :SCORE 0.56098 :MATCHED &quot;Ph&quot; :STATUS &quot;RELATED synonym&quot; :EXACT 1) (MATCH :SCORE 0.55812 :MATCHED &quot;Ph&quot; :STATUS &quot;RELATED synonym&quot; :MAYBE-DEPLURALIZED 1 :SURELY-DEPLURALIZED 0 :DEPLURALIZATION-SCORE 0.85528755 :ALL-CAPS-INITIAL-CAP 1)) :ONT-TYPES (ONT::MOLECULE)))))" paragraph="paragraph37" rule="-SIMPLE-REF" start="1666" uttnum="112">
+		<type>ONT::MOLECULE</type>
+		<name>PH</name>
+		<drum-terms>
+			<drum-term dbid="CHEBI:30396" match-score="0.56098" matched-name="Ph" name="phenyl group">
+				<types>
+					<type>ONT::MOLECULE</type>
+				</types>
+			</drum-term>
+		</drum-terms>
+		<text>Ph</text>
+	</TERM>
+	<TERM end="1693" id="V580658" lisp="(ONT::TERM ONT::V580658 ONT::NUTRITIONAL-SUPPLEMENT :NAME W::D)" paragraph="paragraph37" rule="-SIMPLE-REF" start="1679" uttnum="113">
+		<type>ONT::NUTRITIONAL-SUPPLEMENT</type>
+		<name>D</name>
+		<text>D_RNAP_s32 is</text>
+	</TERM>
+</ekb>
