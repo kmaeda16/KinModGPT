@@ -5,7 +5,7 @@
 - **README.md** is what you are reading now.
 
 ## Citation
-Kazuhiro Maeda and Hiroyuki Kurata, Automatic Generation of SBML Kinetic Models from Natural Language Texts using GPT, 2023
+Maeda, K.; Kurata, H. Automatic Generation of SBML Kinetic Models from Natural Language Texts Using GPT. Int. J. Mol. Sci. 2023, 24, 7296. https://doi.org/10.3390/ijms24087296
 
 
 ===============  
